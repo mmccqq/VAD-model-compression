@@ -1,6 +1,6 @@
 download voice data set.
 
-update the path:
+update the path of voice data set :
 python train_kd.py hparams/train_kd.yaml \
     --data_folder=./voice_data/LibriParty/dataset \
     --musan_folder=./voice_data/musan \
