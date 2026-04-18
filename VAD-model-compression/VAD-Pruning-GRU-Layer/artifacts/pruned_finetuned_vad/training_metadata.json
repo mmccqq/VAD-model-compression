@@ -1,0 +1,10 @@
+{
+  "saved_utc": "2026-03-26T08:39:57.018294Z",
+  "epochs_trained": 10,
+  "final_train_loss": 0.32925359340699184,
+  "final_train_accuracy_percent": 96.02943550951908,
+  "params_pruned": 77024,
+  "size_pruned_mb": 0.31832122802734375,
+  "example_segments_detected": 12,
+  "audio_used": "D:\\Machine Learning\\pretrained_models\\vad-crdnn\\example_vad.wav"
+}

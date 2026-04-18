@@ -1,0 +1,713 @@
+2026-04-08 13:31:20,880 - speechbrain.utils.quirks - INFO - Applied quirks (see `speechbrain.utils.quirks`): [allow_tf32, disable_jit_profiling]
+2026-04-08 13:31:20,880 - speechbrain.utils.quirks - INFO - Excluded quirks specified by the `SB_DISABLE_QUIRKS` environment (comma-separated list): []
+2026-04-08 13:31:20,880 - speechbrain.core - INFO - Beginning experiment!
+2026-04-08 13:31:20,880 - speechbrain.core - INFO - Experiment folder: results/VAD_CRDNN_KD/1986
+2026-04-08 13:31:22,012 - speechbrain.utils.superpowers - DEBUG - annotated-doc==0.0.4
+anyio==4.12.1
+asttokens @ file:///home/conda/feedstock_root/build_artifacts/asttokens_1733250440834/work
+certifi==2026.2.25
+cffi==2.0.0
+charset-normalizer==3.4.4
+click==8.1.8
+comm @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_comm_1753453984/work
+contourpy==1.3.0
+cycler==0.12.1
+debugpy @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_debugpy_1754523415/work
+decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1740384970518/work
+exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1746947292760/work
+executing @ file:///home/conda/feedstock_root/build_artifacts/executing_1745502089858/work
+filelock==3.19.1
+fonttools==4.60.2
+fsspec==2025.10.0
+h11==0.16.0
+hf-xet==1.3.2
+httpcore==1.0.9
+httpx==0.28.1
+huggingface_hub==1.5.0
+HyperPyYAML==1.2.3
+idna==3.11
+importlib_metadata @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_importlib-metadata_1747934053/work
+importlib_resources==6.5.2
+ipykernel @ file:///home/conda/feedstock_root/build_artifacts/ipykernel_1754352855579/work
+ipython @ file:///home/conda/feedstock_root/build_artifacts/ipython_1701831663892/work
+jedi @ file:///home/conda/feedstock_root/build_artifacts/jedi_1733300866624/work
+Jinja2==3.1.6
+joblib==1.5.3
+jupyter_client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_1733440914442/work
+jupyter_core @ file:///home/conda/feedstock_root/build_artifacts/jupyter_core_1748333051527/work
+kiwisolver==1.4.7
+markdown-it-py==3.0.0
+MarkupSafe==3.0.2
+matplotlib==3.9.4
+matplotlib-inline @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-inline_1733416936468/work
+mdurl==0.1.2
+mpmath==1.3.0
+nest_asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1733325553580/work
+networkx==3.2.1
+numpy==1.26.4
+packaging @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_packaging_1769093650/work
+pandas==2.3.3
+parso @ file:///home/conda/feedstock_root/build_artifacts/parso_1733271261340/work
+pexpect @ file:///home/conda/feedstock_root/build_artifacts/pexpect_1733301927746/work
+pickleshare @ file:///home/conda/feedstock_root/build_artifacts/pickleshare_1733327343728/work
+pillow==11.3.0
+platformdirs @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_platformdirs_1746710438/work
+prompt_toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1744724089886/work
+psutil @ file:///home/conda/feedstock_root/build_artifacts/psutil_1740663125313/work
+ptyprocess @ file:///home/conda/feedstock_root/build_artifacts/ptyprocess_1733302279685/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl#sha256=92c32ff62b5fd8cf325bec5ab90d7be3d2a8ca8c8a3813ff487a8d2002630d1f
+pure_eval @ file:///home/conda/feedstock_root/build_artifacts/pure_eval_1733569405015/work
+pycparser==2.23
+Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1750615794071/work
+pyparsing==3.3.2
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dateutil_1751104122/work
+pytz==2026.1.post1
+PyYAML==6.0.3
+pyzmq @ file:///home/conda/feedstock_root/build_artifacts/pyzmq_1755799528447/work
+requests==2.32.5
+rich==14.3.3
+ruamel.yaml==0.18.17
+ruamel.yaml.clib==0.2.15
+scipy==1.13.1
+sentencepiece==0.2.1
+shellingham==1.5.4
+six @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_six_1753199211/work
+soundfile==0.13.1
+speechbrain==1.0.3
+stack_data @ file:///home/conda/feedstock_root/build_artifacts/stack_data_1733569443808/work
+sympy==1.14.0
+torch==2.1.0+cu121
+torchaudio==2.1.0+cu121
+torchvision==0.16.0+cu121
+tornado @ file:///home/conda/feedstock_root/build_artifacts/tornado_1754731992698/work
+tqdm==4.67.3
+traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_1733367359838/work
+triton==2.1.0
+typer==0.23.2
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_typing_extensions_1751643513/work
+tzdata==2025.3
+urllib3==2.6.3
+wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1733231326287/work
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1749421620841/work
+
+
+2026-04-08 13:31:33,511 - musan_prepare - INFO - Musan Data Preparation...
+2026-04-08 13:31:46,513 - musan_prepare - INFO - results/VAD_CRDNN_KD/1986/save/music.csv creation...
+2026-04-08 13:32:26,562 - musan_prepare - INFO - results/VAD_CRDNN_KD/1986/save/noise.csv creation...
+2026-04-08 13:32:50,230 - musan_prepare - INFO - results/VAD_CRDNN_KD/1986/save/speech.csv creation...
+2026-04-08 13:33:56,718 - commonlanguage_prepare - INFO - CommonLanguage Preparation...
+2026-04-08 13:34:39,125 - commonlanguage_prepare - INFO - results/VAD_CRDNN_KD/1986/save/multilang_speech.csv creation...
+2026-04-08 13:35:48,085 - speechbrain.utils.checkpoints - INFO - Would load a checkpoint here, but none found yet.
+2026-04-08 13:35:48,087 - __main__ - INFO - Teacher loaded from vad-crdnn-libriparty_speechbrain_default and frozen.
+2026-04-08 13:35:48,471 - speechbrain.core - INFO - Gradscaler enabled: `False`
+2026-04-08 13:35:48,471 - speechbrain.core - INFO - Using training precision: `--precision=fp32`
+2026-04-08 13:35:48,471 - speechbrain.core - INFO - Using evaluation precision: `--eval_precision=fp32`
+2026-04-08 13:35:48,472 - speechbrain.core - INFO - KDVADBrain Model Statistics:
+* Total Number of Trainable Parameters: 29.0k
+* Total Number of Parameters: 29.0k
+* Trainable Parameters represent 100.0000% of the total size.
+2026-04-08 13:35:48,481 - speechbrain.utils.checkpoints - INFO - Would load a checkpoint here, but none found yet.
+2026-04-08 13:35:48,481 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2026-04-08 13:40:55,931 - speechbrain.nnet.schedulers - INFO - Changing lr from 1 to 0.99
+2026-04-08 13:40:55,939 - speechbrain.utils.train_logger - INFO - epoch: 1, lr: 1.00e+00 - train loss: 2.64e-01 - valid loss: 3.95e-01, valid summary: {'TP': 553415.0, 'TN': 266414.0, 'FP': 57507.0, 'FN': 88664.0, 'FAR': 0.177534028358761, 'FRR': 0.13808892675200188, 'DER': 0.1782944979989708, 'threshold': 0.5, 'precision': 0.9058685069452252, 'recall': 0.8619110732479826, 'F-score': 0.8833432694786357, 'MCC': 0.6701228926340629}
+2026-04-08 13:40:55,984 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_1
+2026-04-08 13:40:56,001 - speechbrain.utils.epoch_loop - INFO - Going into epoch 2
+2026-04-08 13:46:02,512 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.99 to 0.98
+2026-04-08 13:46:02,521 - speechbrain.utils.train_logger - INFO - epoch: 2, lr: 9.91e-01 - train loss: 2.39e-01 - valid loss: 3.66e-01, valid summary: {'TP': 597459.0, 'TN': 244042.0, 'FP': 79879.0, 'FN': 44620.0, 'FAR': 0.24660025129583302, 'FRR': 0.06949300631230627, 'DER': 0.14794872495695016, 'threshold': 0.5, 'precision': 0.8820692180270281, 'recall': 0.9305069936876781, 'F-score': 0.9056409004886249, 'MCC': 0.7053637584361725}
+2026-04-08 13:46:02,578 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_2
+2026-04-08 13:46:02,655 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_1
+2026-04-08 13:46:02,655 - speechbrain.utils.epoch_loop - INFO - Going into epoch 3
+2026-04-08 13:51:09,108 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.98 to 0.97
+2026-04-08 13:51:09,114 - speechbrain.utils.train_logger - INFO - epoch: 3, lr: 9.82e-01 - train loss: 2.32e-01 - valid loss: 3.69e-01, valid summary: {'TP': 616983.0, 'TN': 221182.0, 'FP': 102739.0, 'FN': 25096.0, 'FAR': 0.3171730144078242, 'FRR': 0.03908553308860687, 'DER': 0.152517702361705, 'threshold': 0.5, 'precision': 0.8572518277890511, 'recall': 0.9609144669113775, 'F-score': 0.9061279878631312, 'MCC': 0.6973166944217087}
+2026-04-08 13:51:09,164 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_3
+2026-04-08 13:51:09,216 - speechbrain.utils.epoch_loop - INFO - Going into epoch 4
+2026-04-08 13:56:15,493 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.97 to 0.96
+2026-04-08 13:56:15,507 - speechbrain.utils.train_logger - INFO - epoch: 4, lr: 9.73e-01 - train loss: 2.27e-01 - valid loss: 3.69e-01, valid summary: {'TP': 570719.0, 'TN': 280142.0, 'FP': 43779.0, 'FN': 71360.0, 'FAR': 0.13515332442169123, 'FRR': 0.11113897199565612, 'DER': 0.13532057527610108, 'threshold': 0.5, 'precision': 0.9287564808998413, 'recall': 0.8888610280043283, 'F-score': 0.9083709155905288, 'MCC': 0.7395926769353649}
+2026-04-08 13:56:15,607 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_4
+2026-04-08 13:56:15,750 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_3
+2026-04-08 13:56:15,750 - speechbrain.utils.epoch_loop - INFO - Going into epoch 5
+2026-04-08 14:01:21,975 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.96 to 0.95
+2026-04-08 14:01:22,051 - speechbrain.utils.train_logger - INFO - epoch: 5, lr: 9.64e-01 - train loss: 2.25e-01 - valid loss: 3.65e-01, valid summary: {'TP': 572957.0, 'TN': 279897.0, 'FP': 44024.0, 'FN': 69122.0, 'FAR': 0.1359096816816404, 'FRR': 0.10765341959478339, 'DER': 0.13266749056696536, 'threshold': 0.5, 'precision': 0.928646100933401, 'recall': 0.892346580405201, 'F-score': 0.9101345448191508, 'MCC': 0.7434059978665849}
+2026-04-08 14:01:22,478 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_5
+2026-04-08 14:01:22,663 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_2
+2026-04-08 14:01:22,717 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_4
+2026-04-08 14:01:22,717 - speechbrain.utils.epoch_loop - INFO - Going into epoch 6
+2026-04-08 14:06:29,047 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.95 to 0.95
+2026-04-08 14:06:29,056 - speechbrain.utils.train_logger - INFO - epoch: 6, lr: 9.55e-01 - train loss: 2.23e-01 - valid loss: 3.54e-01, valid summary: {'TP': 607894.0, 'TN': 250313.0, 'FP': 73608.0, 'FN': 34185.0, 'FAR': 0.2272405926136241, 'FRR': 0.053241112074993054, 'DER': 0.12560256441627574, 'threshold': 0.5, 'precision': 0.8919915128642192, 'recall': 0.9467588879249913, 'F-score': 0.9185595743668125, 'MCC': 0.7452164797807804}
+2026-04-08 14:06:29,121 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_6
+2026-04-08 14:06:29,248 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_5
+2026-04-08 14:06:29,248 - speechbrain.utils.epoch_loop - INFO - Going into epoch 7
+2026-04-08 14:11:36,516 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.95 to 0.94
+2026-04-08 14:11:36,525 - speechbrain.utils.train_logger - INFO - epoch: 7, lr: 9.45e-01 - train loss: 2.21e-01 - valid loss: 3.54e-01, valid summary: {'TP': 589948.0, 'TN': 274062.0, 'FP': 49859.0, 'FN': 52131.0, 'FAR': 0.1539233331583888, 'FRR': 0.08119094379351947, 'DER': 0.11804261524750734, 'threshold': 0.5, 'precision': 0.9220718122808765, 'recall': 0.9188090562064649, 'F-score': 0.9204375428080188, 'MCC': 0.7635694211950874}
+2026-04-08 14:11:36,588 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_7
+2026-04-08 14:11:36,747 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_6
+2026-04-08 14:11:36,747 - speechbrain.utils.epoch_loop - INFO - Going into epoch 8
+2026-04-08 14:16:45,614 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.94 to 0.93
+2026-04-08 14:16:45,635 - speechbrain.utils.train_logger - INFO - epoch: 8, lr: 9.36e-01 - train loss: 2.19e-01 - valid loss: 3.48e-01, valid summary: {'TP': 592715.0, 'TN': 274951.0, 'FP': 48970.0, 'FN': 49364.0, 'FAR': 0.1511788368151447, 'FRR': 0.07688150523533589, 'DER': 0.11333162760785702, 'threshold': 0.5, 'precision': 0.9236852973031795, 'recall': 0.9231184947646485, 'F-score': 0.9234018090552469, 'MCC': 0.7717074213396805}
+2026-04-08 14:16:45,732 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_8
+2026-04-08 14:16:45,941 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_7
+2026-04-08 14:16:45,941 - speechbrain.utils.epoch_loop - INFO - Going into epoch 9
+2026-04-08 14:21:56,015 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.93 to 0.92
+2026-04-08 14:21:56,024 - speechbrain.utils.train_logger - INFO - epoch: 9, lr: 9.27e-01 - train loss: 2.19e-01 - valid loss: 3.51e-01, valid summary: {'TP': 592150.0, 'TN': 276134.0, 'FP': 47787.0, 'FN': 49929.0, 'FAR': 0.1475267117599616, 'FRR': 0.0777614592596849, 'DER': 0.11253921527979195, 'threshold': 0.5, 'precision': 0.9253254617251241, 'recall': 0.9222385407402995, 'F-score': 0.9237794224097047, 'MCC': 0.7734541997062181}
+2026-04-08 14:21:56,104 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_9
+2026-04-08 14:21:56,278 - speechbrain.utils.epoch_loop - INFO - Going into epoch 10
+2026-04-08 14:27:03,815 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.92 to 0.91
+2026-04-08 14:27:03,821 - speechbrain.utils.train_logger - INFO - epoch: 10, lr: 9.18e-01 - train loss: 2.18e-01 - valid loss: 3.52e-01, valid summary: {'TP': 602752.0, 'TN': 266514.0, 'FP': 57407.0, 'FN': 39327.0, 'FAR': 0.17722531110980216, 'FRR': 0.061249472416944624, 'DER': 0.11128239227117923, 'threshold': 0.5, 'precision': 0.9130406462685366, 'recall': 0.9387505275830398, 'F-score': 0.9257171116186135, 'MCC': 0.7729046983152668}
+2026-04-08 14:27:03,937 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_10
+2026-04-08 14:27:04,254 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_9
+2026-04-08 14:27:04,255 - speechbrain.utils.epoch_loop - INFO - Going into epoch 11
+2026-04-08 14:32:13,312 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.91 to 0.9
+2026-04-08 14:32:13,344 - speechbrain.utils.train_logger - INFO - epoch: 11, lr: 9.09e-01 - train loss: 2.17e-01 - valid loss: 3.48e-01, valid summary: {'TP': 611611.0, 'TN': 250894.0, 'FP': 73027.0, 'FN': 30468.0, 'FAR': 0.22544694539717322, 'FRR': 0.04745210480330228, 'DER': 0.11999350728401435, 'threshold': 0.5, 'precision': 0.8933348718592761, 'recall': 0.9525478951966821, 'F-score': 0.9219916530804987, 'MCC': 0.7555188003005524}
+2026-04-08 14:32:13,445 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_11
+2026-04-08 14:32:13,722 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_10
+2026-04-08 14:32:13,746 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_8
+2026-04-08 14:32:13,747 - speechbrain.utils.epoch_loop - INFO - Going into epoch 12
+2026-04-08 14:37:21,188 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.9 to 0.89
+2026-04-08 14:37:21,202 - speechbrain.utils.train_logger - INFO - epoch: 12, lr: 9.00e-01 - train loss: 2.16e-01 - valid loss: 3.56e-01, valid summary: {'TP': 621516.0, 'TN': 231363.0, 'FP': 92558.0, 'FN': 20563.0, 'FAR': 0.28574251129132455, 'FRR': 0.03202565416405097, 'DER': 0.13263428927198193, 'threshold': 0.5, 'precision': 0.8703803807448406, 'recall': 0.9679743458359334, 'F-score': 0.9165868452895801, 'MCC': 0.7335634092872338}
+2026-04-08 14:37:21,292 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_12
+2026-04-08 14:37:21,472 - speechbrain.utils.epoch_loop - INFO - Going into epoch 13
+2026-04-08 14:42:26,799 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.89 to 0.88
+2026-04-08 14:42:26,810 - speechbrain.utils.train_logger - INFO - epoch: 13, lr: 8.91e-01 - train loss: 2.16e-01 - valid loss: 3.46e-01, valid summary: {'TP': 614428.0, 'TN': 251564.0, 'FP': 72357.0, 'FN': 27651.0, 'FAR': 0.22337853982914896, 'FRR': 0.04306479420756569, 'DER': 0.11548374580827403, 'threshold': 0.5, 'precision': 0.894643884184994, 'recall': 0.9569352057924188, 'F-score': 0.9247417342933513, 'MCC': 0.7639548277448267}
+2026-04-08 14:42:26,885 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_13
+2026-04-08 14:42:27,185 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_11
+2026-04-08 14:42:27,254 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_12
+2026-04-08 14:42:27,254 - speechbrain.utils.epoch_loop - INFO - Going into epoch 14
+2026-04-08 14:47:35,636 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.88 to 0.87
+2026-04-08 14:47:35,645 - speechbrain.utils.train_logger - INFO - epoch: 14, lr: 8.82e-01 - train loss: 2.15e-01 - valid loss: 3.48e-01, valid summary: {'TP': 607809.0, 'TN': 260073.0, 'FP': 63848.0, 'FN': 34270.0, 'FAR': 0.19710978911524116, 'FRR': 0.05337349453883317, 'DER': 0.11305453967244264, 'threshold': 0.5, 'precision': 0.9049395748127258, 'recall': 0.9466265054611512, 'F-score': 0.9253137616690111, 'MCC': 0.7687665526951283}
+2026-04-08 14:47:35,743 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_14
+2026-04-08 14:47:35,954 - speechbrain.utils.epoch_loop - INFO - Going into epoch 15
+2026-04-08 14:52:40,870 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.87 to 0.86
+2026-04-08 14:52:40,876 - speechbrain.utils.train_logger - INFO - epoch: 15, lr: 8.73e-01 - train loss: 2.15e-01 - valid loss: 3.46e-01, valid summary: {'TP': 589146.0, 'TN': 281198.0, 'FP': 42723.0, 'FN': 52933.0, 'FAR': 0.13189327027268588, 'FRR': 0.08244001127586975, 'DER': 0.10990596821486551, 'threshold': 0.5, 'precision': 0.9323863015909796, 'recall': 0.9175599887241147, 'F-score': 0.9249137327426237, 'MCC': 0.7797946152708034}
+2026-04-08 14:52:40,933 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_15
+2026-04-08 14:52:41,232 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_14
+2026-04-08 14:52:41,258 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_13
+2026-04-08 14:52:41,259 - speechbrain.utils.epoch_loop - INFO - Going into epoch 16
+2026-04-08 14:57:46,625 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.86 to 0.85
+2026-04-08 14:57:46,644 - speechbrain.utils.train_logger - INFO - epoch: 16, lr: 8.64e-01 - train loss: 2.14e-01 - valid loss: 3.49e-01, valid summary: {'TP': 593062.0, 'TN': 276442.0, 'FP': 47479.0, 'FN': 49017.0, 'FAR': 0.14657586263316838, 'FRR': 0.076341073294718, 'DER': 0.1109782128661845, 'threshold': 0.5, 'precision': 0.9258767198352498, 'recall': 0.9236589267052664, 'F-score': 0.9247664935834464, 'MCC': 0.7761749451037915}
+2026-04-08 14:57:46,695 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_16
+2026-04-08 14:57:46,896 - speechbrain.utils.epoch_loop - INFO - Going into epoch 17
+2026-04-08 15:02:53,023 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.85 to 0.85
+2026-04-08 15:02:53,033 - speechbrain.utils.train_logger - INFO - epoch: 17, lr: 8.55e-01 - train loss: 2.13e-01 - valid loss: 3.46e-01, valid summary: {'TP': 591791.0, 'TN': 279626.0, 'FP': 44295.0, 'FN': 50288.0, 'FAR': 0.13674630542631885, 'FRR': 0.07832058048931552, 'DER': 0.10853931011214943, 'threshold': 0.5, 'precision': 0.9303631898831144, 'recall': 0.9216794195106689, 'F-score': 0.9260009466696397, 'MCC': 0.7814265181598747}
+2026-04-08 15:02:53,097 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_17
+2026-04-08 15:02:53,460 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_15
+2026-04-08 15:02:53,509 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_16
+2026-04-08 15:02:53,509 - speechbrain.utils.epoch_loop - INFO - Going into epoch 18
+2026-04-08 15:07:57,294 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.85 to 0.84
+2026-04-08 15:07:57,302 - speechbrain.utils.train_logger - INFO - epoch: 18, lr: 8.45e-01 - train loss: 2.13e-01 - valid loss: 3.42e-01, valid summary: {'TP': 610632.0, 'TN': 261878.0, 'FP': 62043.0, 'FN': 31447.0, 'FAR': 0.19153744277153406, 'FRR': 0.048976839298590216, 'DER': 0.10715063437668214, 'threshold': 0.5, 'precision': 0.9077667521462681, 'recall': 0.9510231607013941, 'F-score': 0.9288916405654594, 'MCC': 0.779751489948754}
+2026-04-08 15:07:57,375 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_18
+2026-04-08 15:07:57,665 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_17
+2026-04-08 15:07:57,666 - speechbrain.utils.epoch_loop - INFO - Going into epoch 19
+2026-04-08 15:13:04,304 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.84 to 0.83
+2026-04-08 15:13:04,331 - speechbrain.utils.train_logger - INFO - epoch: 19, lr: 8.36e-01 - train loss: 2.13e-01 - valid loss: 3.44e-01, valid summary: {'TP': 609739.0, 'TN': 262539.0, 'FP': 61382.0, 'FN': 32340.0, 'FAR': 0.18949682175591612, 'FRR': 0.05036763388928698, 'DER': 0.10744510351057682, 'threshold': 0.5, 'precision': 0.9085381026670167, 'recall': 0.9496323661106975, 'F-score': 0.9286308254645141, 'MCC': 0.7792601886914815}
+2026-04-08 15:13:04,506 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_19
+2026-04-08 15:13:04,866 - speechbrain.utils.epoch_loop - INFO - Going into epoch 20
+2026-04-08 15:18:11,014 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.83 to 0.82
+2026-04-08 15:18:11,022 - speechbrain.utils.train_logger - INFO - epoch: 20, lr: 8.27e-01 - train loss: 2.12e-01 - valid loss: 3.47e-01, valid summary: {'TP': 600217.0, 'TN': 273635.0, 'FP': 50286.0, 'FN': 41862.0, 'FAR': 0.15524155581144305, 'FRR': 0.06519758472088225, 'DER': 0.10545035086032754, 'threshold': 0.5, 'precision': 0.9226967439043183, 'recall': 0.9348024152791021, 'F-score': 0.9287101321231458, 'MCC': 0.784768463207376}
+2026-04-08 15:18:11,076 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_20
+2026-04-08 15:18:11,423 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_19
+2026-04-08 15:18:11,424 - speechbrain.utils.epoch_loop - INFO - Going into epoch 21
+2026-04-08 15:23:18,365 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.82 to 0.81
+2026-04-08 15:23:18,371 - speechbrain.utils.train_logger - INFO - epoch: 21, lr: 8.18e-01 - train loss: 2.11e-01 - valid loss: 3.43e-01, valid summary: {'TP': 603729.0, 'TN': 268759.0, 'FP': 55162.0, 'FN': 38350.0, 'FAR': 0.17029460887067616, 'FRR': 0.0597278528031588, 'DER': 0.10717855145285543, 'threshold': 0.5, 'precision': 0.9162805380555977, 'recall': 0.9402721471968256, 'F-score': 0.9281213248576062, 'MCC': 0.7806183963015593}
+2026-04-08 15:23:18,431 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_21
+2026-04-08 15:23:18,840 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_20
+2026-04-08 15:23:18,841 - speechbrain.utils.epoch_loop - INFO - Going into epoch 22
+2026-04-08 15:28:26,283 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.81 to 0.8
+2026-04-08 15:28:26,291 - speechbrain.utils.train_logger - INFO - epoch: 22, lr: 8.09e-01 - train loss: 2.11e-01 - valid loss: 3.44e-01, valid summary: {'TP': 599432.0, 'TN': 273651.0, 'FP': 50270.0, 'FN': 42647.0, 'FAR': 0.15519216105160963, 'FRR': 0.0664201757104645, 'DER': 0.10642401696058558, 'threshold': 0.5, 'precision': 0.9226260654884713, 'recall': 0.9335798242895199, 'F-score': 0.9280706249743571, 'MCC': 0.7830768851118436}
+2026-04-08 15:28:26,350 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_22
+2026-04-08 15:28:26,783 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_21
+2026-04-08 15:28:26,783 - speechbrain.utils.epoch_loop - INFO - Going into epoch 23
+2026-04-08 15:33:33,148 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.8 to 0.79
+2026-04-08 15:33:33,156 - speechbrain.utils.train_logger - INFO - epoch: 23, lr: 8.00e-01 - train loss: 2.11e-01 - valid loss: 3.42e-01, valid summary: {'TP': 609651.0, 'TN': 265089.0, 'FP': 58832.0, 'FN': 32428.0, 'FAR': 0.18162453190746566, 'FRR': 0.05050468867538028, 'DER': 0.10432814321969837, 'threshold': 0.5, 'precision': 0.9119917783997362, 'recall': 0.9494953113246041, 'F-score': 0.9303657514867667, 'MCC': 0.7852371710156791}
+2026-04-08 15:33:33,263 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_23
+2026-04-08 15:33:33,701 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_22
+2026-04-08 15:33:33,726 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_18
+2026-04-08 15:33:33,726 - speechbrain.utils.epoch_loop - INFO - Going into epoch 24
+2026-04-08 15:38:40,762 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.79 to 0.78
+2026-04-08 15:38:40,770 - speechbrain.utils.train_logger - INFO - epoch: 24, lr: 7.91e-01 - train loss: 2.11e-01 - valid loss: 3.45e-01, valid summary: {'TP': 610091.0, 'TN': 265002.0, 'FP': 58919.0, 'FN': 31988.0, 'FAR': 0.18189311591405985, 'FRR': 0.04981941474491379, 'DER': 0.10388267304160696, 'threshold': 0.5, 'precision': 0.9119310623159458, 'recall': 0.9501805852550707, 'F-score': 0.930662983214717, 'MCC': 0.786050262973855}
+2026-04-08 15:38:40,832 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_24
+2026-04-08 15:38:41,118 - speechbrain.utils.epoch_loop - INFO - Going into epoch 25
+2026-04-08 15:43:54,378 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.78 to 0.77
+2026-04-08 15:43:54,384 - speechbrain.utils.train_logger - INFO - epoch: 25, lr: 7.82e-01 - train loss: 2.10e-01 - valid loss: 3.41e-01, valid summary: {'TP': 599545.0, 'TN': 275041.0, 'FP': 48880.0, 'FN': 42534.0, 'FAR': 0.15090099129108175, 'FRR': 0.0662441849055947, 'DER': 0.10452259697731149, 'threshold': 0.5, 'precision': 0.9246173420210367, 'recall': 0.9337558150943898, 'F-score': 0.9291641095262007, 'MCC': 0.7867594870000358}
+2026-04-08 15:43:54,430 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_25
+2026-04-08 15:43:54,886 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_24
+2026-04-08 15:43:54,908 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_23
+2026-04-08 15:43:54,908 - speechbrain.utils.epoch_loop - INFO - Going into epoch 26
+2026-04-08 15:49:05,790 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.77 to 0.76
+2026-04-08 15:49:05,797 - speechbrain.utils.train_logger - INFO - epoch: 26, lr: 7.73e-01 - train loss: 2.10e-01 - valid loss: 3.51e-01, valid summary: {'TP': 621665.0, 'TN': 241137.0, 'FP': 82784.0, 'FN': 20414.0, 'FAR': 0.25556848737808735, 'FRR': 0.031793595492142994, 'DER': 0.1196079749467419, 'threshold': 0.5, 'precision': 0.8824840407183361, 'recall': 0.9682064045078415, 'F-score': 0.9233599301314195, 'MCC': 0.7571461883947795}
+2026-04-08 15:49:05,884 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_26
+2026-04-08 15:49:06,255 - speechbrain.utils.epoch_loop - INFO - Going into epoch 27
+2026-04-08 15:54:18,868 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.76 to 0.75
+2026-04-08 15:54:18,876 - speechbrain.utils.train_logger - INFO - epoch: 27, lr: 7.64e-01 - train loss: 2.09e-01 - valid loss: 3.37e-01, valid summary: {'TP': 601061.0, 'TN': 273168.0, 'FP': 50753.0, 'FN': 41018.0, 'FAR': 0.15668326536408084, 'FRR': 0.06388310472698742, 'DER': 0.10497363962988983, 'threshold': 0.5, 'precision': 0.9221357626562037, 'recall': 0.936116895272997, 'F-score': 0.9290737332994304, 'MCC': 0.7854845890645841}
+2026-04-08 15:54:18,928 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_27
+2026-04-08 15:54:19,731 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_25
+2026-04-08 15:54:19,791 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_26
+2026-04-08 15:54:19,791 - speechbrain.utils.epoch_loop - INFO - Going into epoch 28
+2026-04-08 15:59:30,041 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.75 to 0.75
+2026-04-08 15:59:30,046 - speechbrain.utils.train_logger - INFO - epoch: 28, lr: 7.55e-01 - train loss: 2.10e-01 - valid loss: 3.40e-01, valid summary: {'TP': 610834.0, 'TN': 265058.0, 'FP': 58863.0, 'FN': 31245.0, 'FAR': 0.1817202342546429, 'FRR': 0.04866223626687606, 'DER': 0.10287569700373901, 'threshold': 0.5, 'precision': 0.9121050266015689, 'recall': 0.9513377637331083, 'F-score': 0.9313083941160686, 'MCC': 0.7879189310018214}
+2026-04-08 15:59:30,088 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_28
+2026-04-08 15:59:30,408 - speechbrain.utils.epoch_loop - INFO - Going into epoch 29
+2026-04-08 16:04:37,261 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.75 to 0.74
+2026-04-08 16:04:37,270 - speechbrain.utils.train_logger - INFO - epoch: 29, lr: 7.45e-01 - train loss: 2.09e-01 - valid loss: 3.47e-01, valid summary: {'TP': 603381.0, 'TN': 272184.0, 'FP': 51737.0, 'FN': 38698.0, 'FAR': 0.15972104309383583, 'FRR': 0.06026984218452776, 'DER': 0.10328759144095409, 'threshold': 0.5, 'precision': 0.921026441038089, 'recall': 0.9397301578154567, 'F-score': 0.9302842976047586, 'MCC': 0.7882353506680513}
+2026-04-08 16:04:37,433 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_29
+2026-04-08 16:04:37,996 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_28
+2026-04-08 16:04:37,997 - speechbrain.utils.epoch_loop - INFO - Going into epoch 30
+2026-04-08 16:09:45,605 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.74 to 0.73
+2026-04-08 16:09:45,611 - speechbrain.utils.train_logger - INFO - epoch: 30, lr: 7.36e-01 - train loss: 2.09e-01 - valid loss: 3.40e-01, valid summary: {'TP': 611648.0, 'TN': 263097.0, 'FP': 60824.0, 'FN': 30431.0, 'FAR': 0.18777417950672579, 'FRR': 0.04739447949551305, 'DER': 0.10432183093358517, 'threshold': 0.5, 'precision': 0.9095516244542389, 'recall': 0.9526055205044713, 'F-score': 0.9305808599285992, 'MCC': 0.7850866463724173}
+2026-04-08 16:09:45,660 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_30
+2026-04-08 16:09:46,289 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_29
+2026-04-08 16:09:46,289 - speechbrain.utils.epoch_loop - INFO - Going into epoch 31
+2026-04-08 16:14:52,986 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.73 to 0.72
+2026-04-08 16:14:52,990 - speechbrain.utils.train_logger - INFO - epoch: 31, lr: 7.27e-01 - train loss: 2.08e-01 - valid loss: 3.36e-01, valid summary: {'TP': 609835.0, 'TN': 266147.0, 'FP': 57774.0, 'FN': 32244.0, 'FAR': 0.1783583034134811, 'FRR': 0.0502181195771852, 'DER': 0.10276238552846859, 'threshold': 0.5, 'precision': 0.9134613224207445, 'recall': 0.9497818804227992, 'F-score': 0.9312675996115105, 'MCC': 0.7882296041956691}
+2026-04-08 16:14:53,042 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_31
+2026-04-08 16:14:53,585 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_30
+2026-04-08 16:14:53,608 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_27
+2026-04-08 16:14:53,609 - speechbrain.utils.epoch_loop - INFO - Going into epoch 32
+2026-04-08 16:19:59,634 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.72 to 0.71
+2026-04-08 16:19:59,639 - speechbrain.utils.train_logger - INFO - epoch: 32, lr: 7.18e-01 - train loss: 2.08e-01 - valid loss: 3.37e-01, valid summary: {'TP': 614483.0, 'TN': 260124.0, 'FP': 63797.0, 'FN': 27596.0, 'FAR': 0.19695234331827213, 'FRR': 0.042979134966257375, 'DER': 0.10449607652351164, 'threshold': 0.5, 'precision': 0.9059429734033009, 'recall': 0.9570208650337271, 'F-score': 0.9307817040668485, 'MCC': 0.7846518449924493}
+2026-04-08 16:19:59,685 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_32
+2026-04-08 16:20:00,084 - speechbrain.utils.epoch_loop - INFO - Going into epoch 33
+2026-04-08 16:25:07,118 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.71 to 0.7
+2026-04-08 16:25:07,123 - speechbrain.utils.train_logger - INFO - epoch: 33, lr: 7.09e-01 - train loss: 2.08e-01 - valid loss: 3.47e-01, valid summary: {'TP': 609614.0, 'TN': 264535.0, 'FP': 59386.0, 'FN': 32465.0, 'FAR': 0.18333482546669763, 'FRR': 0.05056231398316951, 'DER': 0.10507476414203866, 'threshold': 0.5, 'precision': 0.9112316890881776, 'recall': 0.9494376860168149, 'F-score': 0.9299424367257808, 'MCC': 0.7838078084011516}
+2026-04-08 16:25:07,186 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_33
+2026-04-08 16:25:07,777 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_32
+2026-04-08 16:25:07,777 - speechbrain.utils.epoch_loop - INFO - Going into epoch 34
+2026-04-08 16:30:15,913 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.7 to 0.69
+2026-04-08 16:30:15,939 - speechbrain.utils.train_logger - INFO - epoch: 34, lr: 7.00e-01 - train loss: 2.08e-01 - valid loss: 3.31e-01, valid summary: {'TP': 609504.0, 'TN': 267350.0, 'FP': 56571.0, 'FN': 32575.0, 'FAR': 0.17464443490850626, 'FRR': 0.05073363246578613, 'DER': 0.1016657277038127, 'threshold': 0.5, 'precision': 0.9150681229591124, 'recall': 0.9492663675341982, 'F-score': 0.9318535891034236, 'MCC': 0.7903795122325923}
+2026-04-08 16:30:16,003 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_34
+2026-04-08 16:30:16,672 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_33
+2026-04-08 16:30:16,698 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_31
+2026-04-08 16:30:16,699 - speechbrain.utils.epoch_loop - INFO - Going into epoch 35
+2026-04-08 16:35:27,971 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.69 to 0.68
+2026-04-08 16:35:27,977 - speechbrain.utils.train_logger - INFO - epoch: 35, lr: 6.91e-01 - train loss: 2.08e-01 - valid loss: 3.41e-01, valid summary: {'TP': 605542.0, 'TN': 270647.0, 'FP': 53274.0, 'FN': 36537.0, 'FAR': 0.16446602721033324, 'FRR': 0.05690421272148666, 'DER': 0.10250185747595436, 'threshold': 0.5, 'precision': 0.9191367544200365, 'recall': 0.9430957872784977, 'F-score': 0.9309621452922795, 'MCC': 0.789338742693707}
+2026-04-08 16:35:28,022 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_35
+2026-04-08 16:35:28,445 - speechbrain.utils.epoch_loop - INFO - Going into epoch 36
+2026-04-08 16:40:38,557 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.68 to 0.67
+2026-04-08 16:40:38,567 - speechbrain.utils.train_logger - INFO - epoch: 36, lr: 6.82e-01 - train loss: 2.08e-01 - valid loss: 3.37e-01, valid summary: {'TP': 607727.0, 'TN': 268968.0, 'FP': 54953.0, 'FN': 34352.0, 'FAR': 0.1696493898203522, 'FRR': 0.05350120468042011, 'DER': 0.10186552906084669, 'threshold': 0.5, 'precision': 0.9170746061447317, 'recall': 0.9464987953195643, 'F-score': 0.9315544096649266, 'MCC': 0.7902202734953537}
+2026-04-08 16:40:38,616 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_36
+2026-04-08 16:40:39,235 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_35
+2026-04-08 16:40:39,235 - speechbrain.utils.epoch_loop - INFO - Going into epoch 37
+2026-04-08 16:45:50,337 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.67 to 0.66
+2026-04-08 16:45:50,346 - speechbrain.utils.train_logger - INFO - epoch: 37, lr: 6.73e-01 - train loss: 2.08e-01 - valid loss: 3.37e-01, valid summary: {'TP': 608118.0, 'TN': 268951.0, 'FP': 54970.0, 'FN': 33961.0, 'FAR': 0.1697018717526752, 'FRR': 0.05289224534675557, 'DER': 0.10139567126417533, 'threshold': 0.5, 'precision': 0.917099992761128, 'recall': 0.9471077546532288, 'F-score': 0.9318623593762331, 'MCC': 0.7910752270270746}
+2026-04-08 16:45:50,419 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_37
+2026-04-08 16:45:51,066 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_36
+2026-04-08 16:45:51,067 - speechbrain.utils.epoch_loop - INFO - Going into epoch 38
+2026-04-08 16:51:02,453 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.66 to 0.65
+2026-04-08 16:51:02,464 - speechbrain.utils.train_logger - INFO - epoch: 38, lr: 6.64e-01 - train loss: 2.08e-01 - valid loss: 3.47e-01, valid summary: {'TP': 590203.0, 'TN': 282835.0, 'FP': 41086.0, 'FN': 51876.0, 'FAR': 0.12683956890722964, 'FRR': 0.08079379640199912, 'DER': 0.10648104664401656, 'threshold': 0.5, 'precision': 0.9349172882784124, 'recall': 0.9192062035979853, 'F-score': 0.9269951812830226, 'MCC': 0.7861236490611471}
+2026-04-08 16:51:02,529 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_38
+2026-04-08 16:51:03,212 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_37
+2026-04-08 16:51:03,212 - speechbrain.utils.epoch_loop - INFO - Going into epoch 39
+2026-04-08 16:56:15,821 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.65 to 0.65
+2026-04-08 16:56:15,835 - speechbrain.utils.train_logger - INFO - epoch: 39, lr: 6.55e-01 - train loss: 2.07e-01 - valid loss: 3.49e-01, valid summary: {'TP': 586797.0, 'TN': 285050.0, 'FP': 38871.0, 'FN': 55282.0, 'FAR': 0.12000148184279129, 'FRR': 0.08609843960011017, 'DER': 0.10799257209120283, 'threshold': 0.5, 'precision': 0.9378728015496887, 'recall': 0.9139015603998742, 'F-score': 0.9257320269738363, 'MCC': 0.7846143838331928}
+2026-04-08 16:56:15,941 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_39
+2026-04-08 16:56:16,711 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_38
+2026-04-08 16:56:16,711 - speechbrain.utils.epoch_loop - INFO - Going into epoch 40
+2026-04-08 17:01:28,212 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.65 to 0.64
+2026-04-08 17:01:28,216 - speechbrain.utils.train_logger - INFO - epoch: 40, lr: 6.45e-01 - train loss: 2.07e-01 - valid loss: 3.34e-01, valid summary: {'TP': 607765.0, 'TN': 269008.0, 'FP': 54913.0, 'FN': 34314.0, 'FAR': 0.16952590292076866, 'FRR': 0.05344202193187982, 'DER': 0.10176750424568158, 'threshold': 0.5, 'precision': 0.9171347170118682, 'recall': 0.9465579780681046, 'F-score': 0.9316140859945569, 'MCC': 0.7904046740958746}
+2026-04-08 17:01:28,265 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_40
+2026-04-08 17:01:28,995 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_39
+2026-04-08 17:01:28,996 - speechbrain.utils.epoch_loop - INFO - Going into epoch 41
+2026-04-08 17:06:40,049 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.64 to 0.63
+2026-04-08 17:06:40,056 - speechbrain.utils.train_logger - INFO - epoch: 41, lr: 6.36e-01 - train loss: 2.07e-01 - valid loss: 3.43e-01, valid summary: {'TP': 610256.0, 'TN': 265417.0, 'FP': 58504.0, 'FN': 31823.0, 'FAR': 0.18061193933088066, 'FRR': 0.04956243702098886, 'DER': 0.10315151888889913, 'threshold': 0.5, 'precision': 0.9125186913092752, 'recall': 0.9504375629789955, 'F-score': 0.9310922241404169, 'MCC': 0.7874398273508983}
+2026-04-08 17:06:40,132 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_41
+2026-04-08 17:06:40,864 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_40
+2026-04-08 17:06:40,865 - speechbrain.utils.epoch_loop - INFO - Going into epoch 42
+2026-04-08 17:11:53,217 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.63 to 0.62
+2026-04-08 17:11:53,221 - speechbrain.utils.train_logger - INFO - epoch: 42, lr: 6.27e-01 - train loss: 2.07e-01 - valid loss: 3.34e-01, valid summary: {'TP': 610873.0, 'TN': 266608.0, 'FP': 57313.0, 'FN': 31206.0, 'FAR': 0.17693511689578084, 'FRR': 0.04860149607758471, 'DER': 0.10087853754098264, 'threshold': 0.5, 'precision': 0.9142259789938593, 'recall': 0.9513985039223997, 'F-score': 0.9324419106058698, 'MCC': 0.79175977820353}
+2026-04-08 17:11:53,299 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_42
+2026-04-08 17:11:54,025 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_41
+2026-04-08 17:11:54,025 - speechbrain.utils.epoch_loop - INFO - Going into epoch 43
+2026-04-08 17:17:06,661 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.62 to 0.61
+2026-04-08 17:17:06,705 - speechbrain.utils.train_logger - INFO - epoch: 43, lr: 6.18e-01 - train loss: 2.07e-01 - valid loss: 3.45e-01, valid summary: {'TP': 615140.0, 'TN': 258013.0, 'FP': 65908.0, 'FN': 26939.0, 'FAR': 0.20346936444379327, 'FRR': 0.041955896392810825, 'DER': 0.10633531580375825, 'threshold': 0.5, 'precision': 0.9032256169902723, 'recall': 0.9580441036071736, 'F-score': 0.9298275978042924, 'MCC': 0.7811624013745314}
+2026-04-08 17:17:06,974 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_43
+2026-04-08 17:17:07,805 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_42
+2026-04-08 17:17:07,805 - speechbrain.utils.epoch_loop - INFO - Going into epoch 44
+2026-04-08 17:22:19,118 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.61 to 0.6
+2026-04-08 17:22:19,122 - speechbrain.utils.train_logger - INFO - epoch: 44, lr: 6.09e-01 - train loss: 2.07e-01 - valid loss: 3.44e-01, valid summary: {'TP': 597688.0, 'TN': 278701.0, 'FP': 45220.0, 'FN': 44391.0, 'FAR': 0.13960193997918816, 'FRR': 0.06913635238031349, 'DER': 0.10225025645004555, 'threshold': 0.5, 'precision': 0.9296633421889146, 'recall': 0.9308636476196709, 'F-score': 0.930263107720156, 'MCC': 0.7917652134402788}
+2026-04-08 17:22:19,173 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_44
+2026-04-08 17:22:19,954 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_43
+2026-04-08 17:22:19,954 - speechbrain.utils.epoch_loop - INFO - Going into epoch 45
+2026-04-08 17:27:27,047 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.6 to 0.59
+2026-04-08 17:27:27,054 - speechbrain.utils.train_logger - INFO - epoch: 45, lr: 6.00e-01 - train loss: 2.06e-01 - valid loss: 3.44e-01, valid summary: {'TP': 615925.0, 'TN': 258238.0, 'FP': 65683.0, 'FN': 26154.0, 'FAR': 0.2027747506336359, 'FRR': 0.04073330540322856, 'DER': 0.10505706601629096, 'threshold': 0.5, 'precision': 0.9036352272860514, 'recall': 0.9592666945967558, 'F-score': 0.9306203052534323, 'MCC': 0.7835957385316783}
+2026-04-08 17:27:27,114 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_45
+2026-04-08 17:27:27,904 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_44
+2026-04-08 17:27:27,904 - speechbrain.utils.epoch_loop - INFO - Going into epoch 46
+2026-04-08 17:32:41,694 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.59 to 0.58
+2026-04-08 17:32:41,698 - speechbrain.utils.train_logger - INFO - epoch: 46, lr: 5.91e-01 - train loss: 2.07e-01 - valid loss: 3.39e-01, valid summary: {'TP': 608064.0, 'TN': 270420.0, 'FP': 53501.0, 'FN': 34015.0, 'FAR': 0.16516681536546982, 'FRR': 0.05297634714731282, 'DER': 0.09962162088324773, 'threshold': 0.5, 'precision': 0.919129639566771, 'recall': 0.9470236528526715, 'F-score': 0.9328681756675903, 'MCC': 0.7945248281722452}
+2026-04-08 17:32:41,743 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_46
+2026-04-08 17:32:42,535 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_45
+2026-04-08 17:32:42,535 - speechbrain.utils.epoch_loop - INFO - Going into epoch 47
+2026-04-08 17:37:49,622 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.58 to 0.57
+2026-04-08 17:37:49,628 - speechbrain.utils.train_logger - INFO - epoch: 47, lr: 5.82e-01 - train loss: 2.06e-01 - valid loss: 3.36e-01, valid summary: {'TP': 614566.0, 'TN': 261325.0, 'FP': 62596.0, 'FN': 27513.0, 'FAR': 0.19324464915827644, 'FRR': 0.04284986738391938, 'DER': 0.10287695615093541, 'threshold': 0.5, 'precision': 0.9075612630360105, 'recall': 0.9571501326160651, 'F-score': 0.9316963314511905, 'MCC': 0.7877346672424276}
+2026-04-08 17:37:49,692 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_47
+2026-04-08 17:37:50,516 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_46
+2026-04-08 17:37:50,517 - speechbrain.utils.epoch_loop - INFO - Going into epoch 48
+2026-04-08 17:42:57,946 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.57 to 0.56
+2026-04-08 17:42:57,954 - speechbrain.utils.train_logger - INFO - epoch: 48, lr: 5.73e-01 - train loss: 2.06e-01 - valid loss: 3.39e-01, valid summary: {'TP': 595713.0, 'TN': 281119.0, 'FP': 42802.0, 'FN': 46366.0, 'FAR': 0.13213715689936337, 'FRR': 0.07221229786365739, 'DER': 0.10169336885515011, 'threshold': 0.5, 'precision': 0.9329663359513726, 'recall': 0.927787702136327, 'F-score': 0.9303698127587666, 'MCC': 0.7935145448482434}
+2026-04-08 17:42:58,043 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_48
+2026-04-08 17:42:58,897 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_47
+2026-04-08 17:42:58,897 - speechbrain.utils.epoch_loop - INFO - Going into epoch 49
+2026-04-08 17:48:08,059 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.56 to 0.55
+2026-04-08 17:48:08,063 - speechbrain.utils.train_logger - INFO - epoch: 49, lr: 5.64e-01 - train loss: 2.06e-01 - valid loss: 3.37e-01, valid summary: {'TP': 612162.0, 'TN': 265443.0, 'FP': 58478.0, 'FN': 29917.0, 'FAR': 0.18053167284615135, 'FRR': 0.04659395494946811, 'DER': 0.10072299041140262, 'threshold': 0.5, 'precision': 0.9128026959322302, 'recall': 0.9534060450505163, 'F-score': 0.9326626642868733, 'MCC': 0.7919579553772271}
+2026-04-08 17:48:08,111 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_49
+2026-04-08 17:48:08,885 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_48
+2026-04-08 17:48:08,885 - speechbrain.utils.epoch_loop - INFO - Going into epoch 50
+2026-04-08 17:53:16,014 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.55 to 0.55
+2026-04-08 17:53:16,018 - speechbrain.utils.train_logger - INFO - epoch: 50, lr: 5.55e-01 - train loss: 2.06e-01 - valid loss: 3.32e-01, valid summary: {'TP': 605546.0, 'TN': 273059.0, 'FP': 50862.0, 'FN': 36533.0, 'FAR': 0.157019767165446, 'FRR': 0.05689798295848242, 'DER': 0.09947018284667059, 'threshold': 0.5, 'precision': 0.9225146555191143, 'recall': 0.943102017041502, 'F-score': 0.9326947439597008, 'MCC': 0.7952432242708397}
+2026-04-08 17:53:16,069 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_50
+2026-04-08 17:53:16,866 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_49
+2026-04-08 17:53:16,867 - speechbrain.utils.epoch_loop - INFO - Going into epoch 51
+2026-04-08 17:58:22,646 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.55 to 0.54
+2026-04-08 17:58:22,654 - speechbrain.utils.train_logger - INFO - epoch: 51, lr: 5.45e-01 - train loss: 2.06e-01 - valid loss: 3.37e-01, valid summary: {'TP': 596506.0, 'TN': 280637.0, 'FP': 43284.0, 'FN': 45573.0, 'FAR': 0.13362517403934496, 'FRR': 0.07097724734806665, 'DER': 0.10130275223082096, 'threshold': 0.5, 'precision': 0.9323465512121019, 'recall': 0.9290227526519178, 'F-score': 0.9306816843218769, 'MCC': 0.794018627173203}
+2026-04-08 17:58:22,695 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_51
+2026-04-08 17:58:23,495 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_50
+2026-04-08 17:58:23,496 - speechbrain.utils.epoch_loop - INFO - Going into epoch 52
+2026-04-08 18:03:30,646 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.54 to 0.53
+2026-04-08 18:03:30,665 - speechbrain.utils.train_logger - INFO - epoch: 52, lr: 5.36e-01 - train loss: 2.06e-01 - valid loss: 3.38e-01, valid summary: {'TP': 608714.0, 'TN': 268712.0, 'FP': 55209.0, 'FN': 33365.0, 'FAR': 0.17043970597768682, 'FRR': 0.05196401065912369, 'DER': 0.1009475442943325, 'threshold': 0.5, 'precision': 0.9168442726038876, 'recall': 0.9480359893408608, 'F-score': 0.9321792769076923, 'MCC': 0.7918634079009715}
+2026-04-08 18:03:30,727 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_52
+2026-04-08 18:03:31,550 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_51
+2026-04-08 18:03:31,550 - speechbrain.utils.epoch_loop - INFO - Going into epoch 53
+2026-04-08 18:08:38,968 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.53 to 0.52
+2026-04-08 18:08:38,976 - speechbrain.utils.train_logger - INFO - epoch: 53, lr: 5.27e-01 - train loss: 2.05e-01 - valid loss: 3.35e-01, valid summary: {'TP': 607913.0, 'TN': 270615.0, 'FP': 53306.0, 'FN': 34166.0, 'FAR': 0.16456481673000006, 'FRR': 0.053211520700722915, 'DER': 0.09956654767975409, 'threshold': 0.5, 'precision': 0.9193822319080226, 'recall': 0.9467884792992615, 'F-score': 0.9328841139938832, 'MCC': 0.7946540983983672}
+2026-04-08 18:08:39,041 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_53
+2026-04-08 18:08:40,195 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_52
+2026-04-08 18:08:40,195 - speechbrain.utils.epoch_loop - INFO - Going into epoch 54
+2026-04-08 18:13:46,114 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.52 to 0.51
+2026-04-08 18:13:46,122 - speechbrain.utils.train_logger - INFO - epoch: 54, lr: 5.18e-01 - train loss: 2.06e-01 - valid loss: 3.41e-01, valid summary: {'TP': 609393.0, 'TN': 268741.0, 'FP': 55180.0, 'FN': 32686.0, 'FAR': 0.17035017797548876, 'FRR': 0.05090650838915381, 'DER': 0.10005989974195169, 'threshold': 0.5, 'precision': 0.9169692419041863, 'recall': 0.9490934916108306, 'F-score': 0.9327548574524817, 'MCC': 0.7934977396577568}
+2026-04-08 18:13:46,166 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_54
+2026-04-08 18:13:47,033 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_53
+2026-04-08 18:13:47,033 - speechbrain.utils.epoch_loop - INFO - Going into epoch 55
+2026-04-08 18:18:54,152 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.51 to 0.5
+2026-04-08 18:18:54,158 - speechbrain.utils.train_logger - INFO - epoch: 55, lr: 5.09e-01 - train loss: 2.06e-01 - valid loss: 3.41e-01, valid summary: {'TP': 596450.0, 'TN': 279781.0, 'FP': 44140.0, 'FN': 45629.0, 'FAR': 0.13626779369043265, 'FRR': 0.07106446403012602, 'DER': 0.10244901173320617, 'threshold': 0.5, 'precision': 0.9310947720070415, 'recall': 0.9289355359698583, 'F-score': 0.9300139007023636, 'MCC': 0.7917707345442435}
+2026-04-08 18:18:54,232 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_55
+2026-04-08 18:18:55,101 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_54
+2026-04-08 18:18:55,101 - speechbrain.utils.epoch_loop - INFO - Going into epoch 56
+2026-04-08 18:24:01,886 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.5 to 0.49
+2026-04-08 18:24:01,899 - speechbrain.utils.train_logger - INFO - epoch: 56, lr: 5.00e-01 - train loss: 2.05e-01 - valid loss: 3.34e-01, valid summary: {'TP': 613215.0, 'TN': 264694.0, 'FP': 59227.0, 'FN': 28864.0, 'FAR': 0.18284396504085307, 'FRR': 0.04495396983860171, 'DER': 0.10034183497378316, 'threshold': 0.5, 'precision': 0.9119225152503724, 'recall': 0.9550460301613827, 'F-score': 0.9329862360510026, 'MCC': 0.7926297490747294}
+2026-04-08 18:24:01,952 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_56
+2026-04-08 18:24:02,854 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_55
+2026-04-08 18:24:02,855 - speechbrain.utils.epoch_loop - INFO - Going into epoch 57
+2026-04-08 18:29:10,221 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.49 to 0.48
+2026-04-08 18:29:10,226 - speechbrain.utils.train_logger - INFO - epoch: 57, lr: 4.91e-01 - train loss: 2.05e-01 - valid loss: 3.34e-01, valid summary: {'TP': 604190.0, 'TN': 274049.0, 'FP': 49872.0, 'FN': 37889.0, 'FAR': 0.15396346640075345, 'FRR': 0.05900987261692005, 'DER': 0.09992837940469394, 'threshold': 0.5, 'precision': 0.9237503478263387, 'recall': 0.9409901273830643, 'F-score': 0.9322905455502141, 'MCC': 0.7946202514554994}
+2026-04-08 18:29:10,291 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_57
+2026-04-08 18:29:11,178 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_56
+2026-04-08 18:29:11,178 - speechbrain.utils.epoch_loop - INFO - Going into epoch 58
+2026-04-08 18:34:18,383 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.48 to 0.47
+2026-04-08 18:34:18,398 - speechbrain.utils.train_logger - INFO - epoch: 58, lr: 4.82e-01 - train loss: 2.05e-01 - valid loss: 3.34e-01, valid summary: {'TP': 599960.0, 'TN': 277995.0, 'FP': 45926.0, 'FN': 42119.0, 'FAR': 0.14178148375683755, 'FRR': 0.06559784699390471, 'DER': 0.10028418313011372, 'threshold': 0.5, 'precision': 0.9288945727264419, 'recall': 0.9344021530060796, 'F-score': 0.9316402231427097, 'MCC': 0.7949666484990084}
+2026-04-08 18:34:18,462 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_58
+2026-04-08 18:34:19,541 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_57
+2026-04-08 18:34:19,542 - speechbrain.utils.epoch_loop - INFO - Going into epoch 59
+2026-04-08 18:39:28,660 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.47 to 0.46
+2026-04-08 18:39:28,666 - speechbrain.utils.train_logger - INFO - epoch: 59, lr: 4.73e-01 - train loss: 2.05e-01 - valid loss: 3.34e-01, valid summary: {'TP': 609402.0, 'TN': 269855.0, 'FP': 54066.0, 'FN': 32677.0, 'FAR': 0.16691106782208726, 'FRR': 0.05089249142239427, 'DER': 0.09865488702392931, 'threshold': 0.5, 'precision': 0.9185100110329222, 'recall': 0.9491075085775902, 'F-score': 0.9335581177851123, 'MCC': 0.796221629205841}
+2026-04-08 18:39:28,714 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_59
+2026-04-08 18:39:29,726 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_58
+2026-04-08 18:39:29,727 - speechbrain.utils.epoch_loop - INFO - Going into epoch 60
+2026-04-08 18:44:41,862 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.46 to 0.45
+2026-04-08 18:44:41,868 - speechbrain.utils.train_logger - INFO - epoch: 60, lr: 4.64e-01 - train loss: 2.05e-01 - valid loss: 3.34e-01, valid summary: {'TP': 608656.0, 'TN': 269521.0, 'FP': 54400.0, 'FN': 33423.0, 'FAR': 0.16794218343360978, 'FRR': 0.05205434222268518, 'DER': 0.10000603522979877, 'threshold': 0.5, 'precision': 0.9179556477884082, 'recall': 0.9479456577772992, 'F-score': 0.9327096430637444, 'MCC': 0.7936957229952241}
+2026-04-08 18:44:41,914 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_60
+2026-04-08 18:44:42,892 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_59
+2026-04-08 18:44:42,892 - speechbrain.utils.epoch_loop - INFO - Going into epoch 61
+2026-04-08 18:49:54,276 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.45 to 0.45
+2026-04-08 18:49:54,282 - speechbrain.utils.train_logger - INFO - epoch: 61, lr: 4.55e-01 - train loss: 2.05e-01 - valid loss: 3.30e-01, valid summary: {'TP': 607877.0, 'TN': 271890.0, 'FP': 52031.0, 'FN': 34202.0, 'FAR': 0.16062867180577484, 'FRR': 0.05326758856776108, 'DER': 0.09801799794718263, 'threshold': 0.5, 'precision': 0.9211541608830182, 'recall': 0.9467324114322233, 'F-score': 0.9337681559032464, 'MCC': 0.7976749639308848}
+2026-04-08 18:49:54,333 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_61
+2026-04-08 18:49:55,315 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_60
+2026-04-08 18:49:55,341 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_34
+2026-04-08 18:49:55,341 - speechbrain.utils.epoch_loop - INFO - Going into epoch 62
+2026-04-08 18:55:06,719 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.45 to 0.44
+2026-04-08 18:55:06,735 - speechbrain.utils.train_logger - INFO - epoch: 62, lr: 4.45e-01 - train loss: 2.05e-01 - valid loss: 3.37e-01, valid summary: {'TP': 597073.0, 'TN': 279886.0, 'FP': 44035.0, 'FN': 45006.0, 'FAR': 0.13594364057902586, 'FRR': 0.07009417844221552, 'DER': 0.10153382313198106, 'threshold': 0.5, 'precision': 0.9313142247483898, 'recall': 0.9299058215577689, 'F-score': 0.9306094902769433, 'MCC': 0.793374969080335}
+2026-04-08 18:55:06,794 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_62
+2026-04-08 18:55:07,463 - speechbrain.utils.epoch_loop - INFO - Going into epoch 63
+2026-04-08 19:00:17,890 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.44 to 0.43
+2026-04-08 19:00:17,900 - speechbrain.utils.train_logger - INFO - epoch: 63, lr: 4.36e-01 - train loss: 2.05e-01 - valid loss: 3.35e-01, valid summary: {'TP': 602967.0, 'TN': 276203.0, 'FP': 47718.0, 'FN': 39112.0, 'FAR': 0.14731369685818, 'FRR': 0.06091462265546668, 'DER': 0.09876360658348102, 'threshold': 0.5, 'precision': 0.9266649761405146, 'recall': 0.9390853773445177, 'F-score': 0.9328338351006061, 'MCC': 0.7971793424577581}
+2026-04-08 19:00:17,956 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_63
+2026-04-08 19:00:19,171 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_62
+2026-04-08 19:00:19,171 - speechbrain.utils.epoch_loop - INFO - Going into epoch 64
+2026-04-08 19:05:29,752 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.43 to 0.42
+2026-04-08 19:05:29,759 - speechbrain.utils.train_logger - INFO - epoch: 64, lr: 4.27e-01 - train loss: 2.05e-01 - valid loss: 3.40e-01, valid summary: {'TP': 621531.0, 'TN': 249281.0, 'FP': 74640.0, 'FN': 20548.0, 'FAR': 0.2304265546228793, 'FRR': 0.03200229255278506, 'DER': 0.10930947207893196, 'threshold': 0.5, 'precision': 0.8927849623152804, 'recall': 0.9679977074471994, 'F-score': 0.9288712871287129, 'MCC': 0.7760959764576005}
+2026-04-08 19:05:29,811 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_64
+2026-04-08 19:05:30,927 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_63
+2026-04-08 19:05:30,928 - speechbrain.utils.epoch_loop - INFO - Going into epoch 65
+2026-04-08 19:10:41,221 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.42 to 0.41
+2026-04-08 19:10:41,231 - speechbrain.utils.train_logger - INFO - epoch: 65, lr: 4.18e-01 - train loss: 2.05e-01 - valid loss: 3.37e-01, valid summary: {'TP': 614272.0, 'TN': 263532.0, 'FP': 60389.0, 'FN': 27807.0, 'FAR': 0.18643125947375483, 'FRR': 0.04330775496473108, 'DER': 0.10047345421073382, 'threshold': 0.5, 'precision': 0.9104898608337978, 'recall': 0.9566922450352533, 'F-score': 0.9330194267661042, 'MCC': 0.7923363322879039}
+2026-04-08 19:10:41,289 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_65
+2026-04-08 19:10:42,286 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_64
+2026-04-08 19:10:42,287 - speechbrain.utils.epoch_loop - INFO - Going into epoch 66
+2026-04-08 19:15:51,883 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.41 to 0.4
+2026-04-08 19:15:51,888 - speechbrain.utils.train_logger - INFO - epoch: 66, lr: 4.09e-01 - train loss: 2.05e-01 - valid loss: 3.39e-01, valid summary: {'TP': 594002.0, 'TN': 281667.0, 'FP': 42254.0, 'FN': 48077.0, 'FAR': 0.1304453863750689, 'FRR': 0.07487707898872141, 'DER': 0.10315655801449973, 'threshold': 0.5, 'precision': 0.933589624302153, 'recall': 0.925122921011263, 'F-score': 0.9293369891303923, 'MCC': 0.7912255896328501}
+2026-04-08 19:15:51,928 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_66
+2026-04-08 19:15:52,944 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_65
+2026-04-08 19:15:52,944 - speechbrain.utils.epoch_loop - INFO - Going into epoch 67
+2026-04-08 19:21:02,144 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.4 to 0.39
+2026-04-08 19:21:02,149 - speechbrain.utils.train_logger - INFO - epoch: 67, lr: 4.00e-01 - train loss: 2.04e-01 - valid loss: 3.31e-01, valid summary: {'TP': 603282.0, 'TN': 275662.0, 'FP': 48259.0, 'FN': 38797.0, 'FAR': 0.14898385717504734, 'FRR': 0.060424028818882716, 'DER': 0.09904612808096876, 'threshold': 0.5, 'precision': 0.9259309851567142, 'recall': 0.9395759711811017, 'F-score': 0.9327035760115026, 'MCC': 0.7965506085304503}
+2026-04-08 19:21:02,193 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_67
+2026-04-08 19:21:03,265 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_66
+2026-04-08 19:21:03,265 - speechbrain.utils.epoch_loop - INFO - Going into epoch 68
+2026-04-08 19:26:13,369 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.39 to 0.38
+2026-04-08 19:26:13,375 - speechbrain.utils.train_logger - INFO - epoch: 68, lr: 3.91e-01 - train loss: 2.04e-01 - valid loss: 3.36e-01, valid summary: {'TP': 596873.0, 'TN': 280752.0, 'FP': 43169.0, 'FN': 45206.0, 'FAR': 0.1332701492030423, 'FRR': 0.07040566659242756, 'DER': 0.10069790628115538, 'threshold': 0.5, 'precision': 0.9325528637183039, 'recall': 0.9295943334075568, 'F-score': 0.931071248345515, 'MCC': 0.7950942845629612}
+2026-04-08 19:26:13,424 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_68
+2026-04-08 19:26:14,640 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_67
+2026-04-08 19:26:14,640 - speechbrain.utils.epoch_loop - INFO - Going into epoch 69
+2026-04-08 19:31:25,139 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.38 to 0.37
+2026-04-08 19:31:25,145 - speechbrain.utils.train_logger - INFO - epoch: 69, lr: 3.82e-01 - train loss: 2.04e-01 - valid loss: 3.38e-01, valid summary: {'TP': 619924.0, 'TN': 252448.0, 'FP': 71473.0, 'FN': 22155.0, 'FAR': 0.2206494793483528, 'FRR': 0.03450509983973881, 'DER': 0.10732577386711051, 'threshold': 0.5, 'precision': 0.8966252384664541, 'recall': 0.9654949001602456, 'F-score': 0.9297865128431257, 'MCC': 0.7795851417518056}
+2026-04-08 19:31:25,200 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_69
+2026-04-08 19:31:26,425 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_68
+2026-04-08 19:31:26,426 - speechbrain.utils.epoch_loop - INFO - Going into epoch 70
+2026-04-08 19:36:38,276 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.37 to 0.36
+2026-04-08 19:36:38,282 - speechbrain.utils.train_logger - INFO - epoch: 70, lr: 3.73e-01 - train loss: 2.04e-01 - valid loss: 3.38e-01, valid summary: {'TP': 597027.0, 'TN': 280699.0, 'FP': 43222.0, 'FN': 45052.0, 'FAR': 0.1334337693449905, 'FRR': 0.07016582071676429, 'DER': 0.10057124888632557, 'threshold': 0.5, 'precision': 0.9324918898740813, 'recall': 0.9298341792832201, 'F-score': 0.9311611381799353, 'MCC': 0.7952944046406109}
+2026-04-08 19:36:38,343 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_70
+2026-04-08 19:36:39,484 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_69
+2026-04-08 19:36:39,485 - speechbrain.utils.epoch_loop - INFO - Going into epoch 71
+2026-04-08 19:41:49,425 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.36 to 0.35
+2026-04-08 19:41:49,430 - speechbrain.utils.train_logger - INFO - epoch: 71, lr: 3.64e-01 - train loss: 2.04e-01 - valid loss: 3.39e-01, valid summary: {'TP': 618679.0, 'TN': 254978.0, 'FP': 68943.0, 'FN': 23400.0, 'FAR': 0.2128389329496941, 'FRR': 0.03644411357480876, 'DER': 0.10569708707192747, 'threshold': 0.5, 'precision': 0.8997370648408443, 'recall': 0.9635558864251756, 'F-score': 0.9305535605372938, 'MCC': 0.7825240106841549}
+2026-04-08 19:41:49,477 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_71
+2026-04-08 19:41:50,617 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_70
+2026-04-08 19:41:50,618 - speechbrain.utils.epoch_loop - INFO - Going into epoch 72
+2026-04-08 19:47:00,591 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.35 to 0.35
+2026-04-08 19:47:00,602 - speechbrain.utils.train_logger - INFO - epoch: 72, lr: 3.55e-01 - train loss: 2.04e-01 - valid loss: 3.35e-01, valid summary: {'TP': 610757.0, 'TN': 268412.0, 'FP': 55509.0, 'FN': 31322.0, 'FAR': 0.17136585772456334, 'FRR': 0.048782159204707694, 'DER': 0.09876485635867394, 'threshold': 0.5, 'precision': 0.9166864285435409, 'recall': 0.9512178407952767, 'F-score': 0.9336329484960006, 'MCC': 0.7958553418121725}
+2026-04-08 19:47:00,651 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_72
+2026-04-08 19:47:01,921 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_71
+2026-04-08 19:47:01,922 - speechbrain.utils.epoch_loop - INFO - Going into epoch 73
+2026-04-08 19:52:13,175 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.35 to 0.34
+2026-04-08 19:52:13,181 - speechbrain.utils.train_logger - INFO - epoch: 73, lr: 3.45e-01 - train loss: 2.04e-01 - valid loss: 3.34e-01, valid summary: {'TP': 606729.0, 'TN': 271371.0, 'FP': 52550.0, 'FN': 35350.0, 'FAR': 0.16223091432787123, 'FRR': 0.05505553054997819, 'DER': 0.10010249402118096, 'threshold': 0.5, 'precision': 0.9202917126133106, 'recall': 0.9449444694500062, 'F-score': 0.9324551737492681, 'MCC': 0.7937984807430136}
+2026-04-08 19:52:13,225 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_73
+2026-04-08 19:52:14,409 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_72
+2026-04-08 19:52:14,409 - speechbrain.utils.epoch_loop - INFO - Going into epoch 74
+2026-04-08 19:57:24,074 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.34 to 0.33
+2026-04-08 19:57:24,078 - speechbrain.utils.train_logger - INFO - epoch: 74, lr: 3.36e-01 - train loss: 2.04e-01 - valid loss: 3.37e-01, valid summary: {'TP': 614245.0, 'TN': 262680.0, 'FP': 61241.0, 'FN': 27834.0, 'FAR': 0.18906153043488413, 'FRR': 0.0433498058650097, 'DER': 0.10157653163041193, 'threshold': 0.5, 'precision': 0.9093378693266639, 'recall': 0.9566501941349747, 'F-score': 0.9323942272297762, 'MCC': 0.7902247507861674}
+2026-04-08 19:57:24,137 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_74
+2026-04-08 19:57:25,328 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_73
+2026-04-08 19:57:25,328 - speechbrain.utils.epoch_loop - INFO - Going into epoch 75
+2026-04-08 20:02:36,590 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.33 to 0.32
+2026-04-08 20:02:36,596 - speechbrain.utils.train_logger - INFO - epoch: 75, lr: 3.27e-01 - train loss: 2.04e-01 - valid loss: 3.34e-01, valid summary: {'TP': 608310.0, 'TN': 270482.0, 'FP': 53439.0, 'FN': 33769.0, 'FAR': 0.16497541067111532, 'FRR': 0.05259321672255201, 'DER': 0.09923622427149884, 'threshold': 0.5, 'precision': 0.9192458167673707, 'recall': 0.9474067832774324, 'F-score': 0.9331138769837739, 'MCC': 0.7952384808015784}
+2026-04-08 20:02:36,696 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_75
+2026-04-08 20:02:38,045 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_74
+2026-04-08 20:02:38,045 - speechbrain.utils.epoch_loop - INFO - Going into epoch 76
+2026-04-08 20:07:49,136 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.32 to 0.31
+2026-04-08 20:07:49,142 - speechbrain.utils.train_logger - INFO - epoch: 76, lr: 3.18e-01 - train loss: 2.04e-01 - valid loss: 3.39e-01, valid summary: {'TP': 608780.0, 'TN': 269188.0, 'FP': 54733.0, 'FN': 33299.0, 'FAR': 0.16897021187264274, 'FRR': 0.05186121956955372, 'DER': 0.1002678913126663, 'threshold': 0.5, 'precision': 0.9175102823908361, 'recall': 0.9481387804304306, 'F-score': 0.9325731162568398, 'MCC': 0.7931715617292872}
+2026-04-08 20:07:49,201 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_76
+2026-04-08 20:07:50,497 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_75
+2026-04-08 20:07:50,498 - speechbrain.utils.epoch_loop - INFO - Going into epoch 77
+2026-04-08 20:13:00,683 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.31 to 0.3
+2026-04-08 20:13:00,688 - speechbrain.utils.train_logger - INFO - epoch: 77, lr: 3.09e-01 - train loss: 2.04e-01 - valid loss: 3.39e-01, valid summary: {'TP': 593763.0, 'TN': 282885.0, 'FP': 41036.0, 'FN': 48316.0, 'FAR': 0.1266852102827502, 'FRR': 0.0752493073282248, 'DER': 0.10192460371779663, 'threshold': 0.5, 'precision': 0.9353559158095565, 'recall': 0.9247506926717596, 'F-score': 0.9300230718988032, 'MCC': 0.7937584760308743}
+2026-04-08 20:13:00,734 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_77
+2026-04-08 20:13:02,085 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_76
+2026-04-08 20:13:02,086 - speechbrain.utils.epoch_loop - INFO - Going into epoch 78
+2026-04-08 20:18:11,616 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.3 to 0.29
+2026-04-08 20:18:11,621 - speechbrain.utils.train_logger - INFO - epoch: 78, lr: 3.00e-01 - train loss: 2.04e-01 - valid loss: 3.34e-01, valid summary: {'TP': 614838.0, 'TN': 263032.0, 'FP': 60889.0, 'FN': 27241.0, 'FAR': 0.18797484571854903, 'FRR': 0.042426243499631006, 'DER': 0.10039071844350415, 'threshold': 0.5, 'precision': 0.9098911246701565, 'recall': 0.9575737565003534, 'F-score': 0.9331236919546579, 'MCC': 0.7924817555829778}
+2026-04-08 20:18:11,663 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_78
+2026-04-08 20:18:12,867 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_77
+2026-04-08 20:18:12,868 - speechbrain.utils.epoch_loop - INFO - Going into epoch 79
+2026-04-08 20:23:20,490 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.29 to 0.28
+2026-04-08 20:23:20,494 - speechbrain.utils.train_logger - INFO - epoch: 79, lr: 2.91e-01 - train loss: 2.03e-01 - valid loss: 3.34e-01, valid summary: {'TP': 601623.0, 'TN': 277412.0, 'FP': 46509.0, 'FN': 40456.0, 'FAR': 0.1435813053182676, 'FRR': 0.0630078230248916, 'DER': 0.09893235195413039, 'threshold': 0.5, 'precision': 0.9282414693303073, 'recall': 0.9369921769750928, 'F-score': 0.9325962962647195, 'MCC': 0.7971807362673147}
+2026-04-08 20:23:20,534 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_79
+2026-04-08 20:23:21,747 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_78
+2026-04-08 20:23:21,747 - speechbrain.utils.epoch_loop - INFO - Going into epoch 80
+2026-04-08 20:28:30,279 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.28 to 0.27
+2026-04-08 20:28:30,284 - speechbrain.utils.train_logger - INFO - epoch: 80, lr: 2.82e-01 - train loss: 2.04e-01 - valid loss: 3.33e-01, valid summary: {'TP': 607215.0, 'TN': 272626.0, 'FP': 51295.0, 'FN': 34864.0, 'FAR': 0.15835651285343777, 'FRR': 0.054298614344962935, 'DER': 0.09792564792956798, 'threshold': 0.5, 'precision': 0.9221044479202909, 'recall': 0.9457013856550215, 'F-score': 0.9337538607507829, 'MCC': 0.7979618039836317}
+2026-04-08 20:28:30,331 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_80
+2026-04-08 20:28:31,790 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_79
+2026-04-08 20:28:31,790 - speechbrain.utils.epoch_loop - INFO - Going into epoch 81
+2026-04-08 20:33:38,643 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.27 to 0.26
+2026-04-08 20:33:38,649 - speechbrain.utils.train_logger - INFO - epoch: 81, lr: 2.73e-01 - train loss: 2.03e-01 - valid loss: 3.32e-01, valid summary: {'TP': 601675.0, 'TN': 277372.0, 'FP': 46549.0, 'FN': 40404.0, 'FAR': 0.14370479221785115, 'FRR': 0.06292683610583646, 'DER': 0.09891735026682193, 'threshold': 0.5, 'precision': 0.9281899466850821, 'recall': 0.937073163894148, 'F-score': 0.9326104023628559, 'MCC': 0.7971968389553798}
+2026-04-08 20:33:38,697 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_81
+2026-04-08 20:33:40,007 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_80
+2026-04-08 20:33:40,008 - speechbrain.utils.epoch_loop - INFO - Going into epoch 82
+2026-04-08 20:38:50,638 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.26 to 0.25
+2026-04-08 20:38:50,651 - speechbrain.utils.train_logger - INFO - epoch: 82, lr: 2.64e-01 - train loss: 2.04e-01 - valid loss: 3.32e-01, valid summary: {'TP': 610896.0, 'TN': 268938.0, 'FP': 54983.0, 'FN': 31183.0, 'FAR': 0.16974200499503983, 'FRR': 0.048565674940310326, 'DER': 0.09793438307680656, 'threshold': 0.5, 'precision': 0.9174279411124105, 'recall': 0.9514343250596741, 'F-score': 0.9341217378539678, 'MCC': 0.7974505807260848}
+2026-04-08 20:38:50,727 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_82
+2026-04-08 20:38:52,273 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_81
+2026-04-08 20:38:52,273 - speechbrain.utils.epoch_loop - INFO - Going into epoch 83
+2026-04-08 20:44:01,299 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.25 to 0.25
+2026-04-08 20:44:01,308 - speechbrain.utils.train_logger - INFO - epoch: 83, lr: 2.55e-01 - train loss: 2.03e-01 - valid loss: 3.38e-01, valid summary: {'TP': 617422.0, 'TN': 257690.0, 'FP': 66231.0, 'FN': 24657.0, 'FAR': 0.20446652115793035, 'FRR': 0.038401816598891435, 'DER': 0.10385870608561985, 'threshold': 0.5, 'precision': 0.9031219054110652, 'recall': 0.9615981834010929, 'F-score': 0.9314431574405687, 'MCC': 0.7859152983393866}
+2026-04-08 20:44:01,381 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_83
+2026-04-08 20:44:03,161 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_82
+2026-04-08 20:44:03,161 - speechbrain.utils.epoch_loop - INFO - Going into epoch 84
+2026-04-08 20:49:13,258 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.25 to 0.24
+2026-04-08 20:49:13,263 - speechbrain.utils.train_logger - INFO - epoch: 84, lr: 2.45e-01 - train loss: 2.04e-01 - valid loss: 3.34e-01, valid summary: {'TP': 604590.0, 'TN': 275000.0, 'FP': 48921.0, 'FN': 37489.0, 'FAR': 0.15102756536315487, 'FRR': 0.05838689631649597, 'DER': 0.09823895223911029, 'threshold': 0.5, 'precision': 0.9251412753572483, 'recall': 0.9416131036834884, 'F-score': 0.9333045176328931, 'MCC': 0.7978455606456263}
+2026-04-08 20:49:13,330 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_84
+2026-04-08 20:49:14,666 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_83
+2026-04-08 20:49:14,667 - speechbrain.utils.epoch_loop - INFO - Going into epoch 85
+2026-04-08 20:54:24,021 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.24 to 0.23
+2026-04-08 20:54:24,026 - speechbrain.utils.train_logger - INFO - epoch: 85, lr: 2.36e-01 - train loss: 2.03e-01 - valid loss: 3.34e-01, valid summary: {'TP': 601847.0, 'TN': 277397.0, 'FP': 46524.0, 'FN': 40232.0, 'FAR': 0.14362761290561143, 'FRR': 0.0626589562966541, 'DER': 0.09867113110808719, 'threshold': 0.5, 'precision': 0.9282447857784982, 'recall': 0.9373410437033303, 'F-score': 0.9327707388895347, 'MCC': 0.7976376586529229}
+2026-04-08 20:54:24,067 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_85
+2026-04-08 20:54:25,409 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_84
+2026-04-08 20:54:25,410 - speechbrain.utils.epoch_loop - INFO - Going into epoch 86
+2026-04-08 20:59:34,452 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.23 to 0.22
+2026-04-08 20:59:34,463 - speechbrain.utils.train_logger - INFO - epoch: 86, lr: 2.27e-01 - train loss: 2.03e-01 - valid loss: 3.38e-01, valid summary: {'TP': 592657.0, 'TN': 283910.0, 'FP': 40011.0, 'FN': 49422.0, 'FAR': 0.12352085848092209, 'FRR': 0.07697183679889738, 'DER': 0.10202642809961929, 'threshold': 0.5, 'precision': 0.9367582997717454, 'recall': 0.923028163201087, 'F-score': 0.9298425491489684, 'MCC': 0.7939804022910364}
+2026-04-08 20:59:34,517 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_86
+2026-04-08 20:59:35,868 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_85
+2026-04-08 20:59:35,868 - speechbrain.utils.epoch_loop - INFO - Going into epoch 87
+2026-04-08 21:04:44,789 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.22 to 0.21
+2026-04-08 21:04:44,793 - speechbrain.utils.train_logger - INFO - epoch: 87, lr: 2.18e-01 - train loss: 2.03e-01 - valid loss: 3.36e-01, valid summary: {'TP': 605717.0, 'TN': 273734.0, 'FP': 50187.0, 'FN': 36362.0, 'FAR': 0.1549359257349738, 'FRR': 0.05663166059005112, 'DER': 0.09841253236393957, 'threshold': 0.5, 'precision': 0.9234842293994102, 'recall': 0.9433683394099333, 'F-score': 0.9333203901746017, 'MCC': 0.7972784654455931}
+2026-04-08 21:04:44,839 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_87
+2026-04-08 21:04:46,204 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_86
+2026-04-08 21:04:46,206 - speechbrain.utils.epoch_loop - INFO - Going into epoch 88
+2026-04-08 21:09:55,026 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.21 to 0.2
+2026-04-08 21:09:55,054 - speechbrain.utils.train_logger - INFO - epoch: 88, lr: 2.09e-01 - train loss: 2.03e-01 - valid loss: 3.37e-01, valid summary: {'TP': 603195.0, 'TN': 276675.0, 'FP': 47246.0, 'FN': 38884.0, 'FAR': 0.14585655144309428, 'FRR': 0.060559526164224955, 'DER': 0.09788946094309275, 'threshold': 0.5, 'precision': 0.9273631274781121, 'recall': 0.9394404738357595, 'F-score': 0.9333627332652493, 'MCC': 0.7988447878286138}
+2026-04-08 21:09:55,135 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_88
+2026-04-08 21:09:56,817 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_87
+2026-04-08 21:09:56,818 - speechbrain.utils.epoch_loop - INFO - Going into epoch 89
+2026-04-08 21:15:07,668 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.2 to 0.19
+2026-04-08 21:15:07,672 - speechbrain.utils.train_logger - INFO - epoch: 89, lr: 2.00e-01 - train loss: 2.03e-01 - valid loss: 3.30e-01, valid summary: {'TP': 610771.0, 'TN': 269187.0, 'FP': 54734.0, 'FN': 31308.0, 'FAR': 0.16897329904513234, 'FRR': 0.04876035503419285, 'DER': 0.09777966675682137, 'threshold': 0.5, 'precision': 0.9177556892885715, 'recall': 0.9512396449657916, 'F-score': 0.9341977264940532, 'MCC': 0.7977634695366186}
+2026-04-08 21:15:07,727 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_89
+2026-04-08 21:15:09,244 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_88
+2026-04-08 21:15:09,261 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_61
+2026-04-08 21:15:09,261 - speechbrain.utils.epoch_loop - INFO - Going into epoch 90
+2026-04-08 21:20:15,952 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.19 to 0.18
+2026-04-08 21:20:15,956 - speechbrain.utils.train_logger - INFO - epoch: 90, lr: 1.91e-01 - train loss: 2.04e-01 - valid loss: 3.36e-01, valid summary: {'TP': 601324.0, 'TN': 278584.0, 'FP': 45337.0, 'FN': 40755.0, 'FAR': 0.13996313916046998, 'FRR': 0.06347349780945859, 'DER': 0.0978420471231072, 'threshold': 0.5, 'precision': 0.9298906227528654, 'recall': 0.9365265021905258, 'F-score': 0.9331967658332946, 'MCC': 0.7994104068724542}
+2026-04-08 21:20:16,009 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_90
+2026-04-08 21:20:17,077 - speechbrain.utils.epoch_loop - INFO - Going into epoch 91
+2026-04-08 21:25:26,987 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.18 to 0.17
+2026-04-08 21:25:26,992 - speechbrain.utils.train_logger - INFO - epoch: 91, lr: 1.82e-01 - train loss: 2.03e-01 - valid loss: 3.34e-01, valid summary: {'TP': 610875.0, 'TN': 267150.0, 'FP': 56771.0, 'FN': 31204.0, 'FAR': 0.17526186940642394, 'FRR': 0.04859838119608259, 'DER': 0.10019646365422283, 'threshold': 0.5, 'precision': 0.9149684114036343, 'recall': 0.9514016188039018, 'F-score': 0.9328294107541659, 'MCC': 0.7930757183065488}
+2026-04-08 21:25:27,038 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_91
+2026-04-08 21:25:28,585 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_90
+2026-04-08 21:25:28,585 - speechbrain.utils.epoch_loop - INFO - Going into epoch 92
+2026-04-08 21:30:37,144 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.17 to 0.16
+2026-04-08 21:30:37,149 - speechbrain.utils.train_logger - INFO - epoch: 92, lr: 1.73e-01 - train loss: 2.03e-01 - valid loss: 3.33e-01, valid summary: {'TP': 607989.0, 'TN': 272618.0, 'FP': 51303.0, 'FN': 34090.0, 'FAR': 0.15838121023335447, 'FRR': 0.053093155203642335, 'DER': 0.0969706123162762, 'threshold': 0.5, 'precision': 0.9221847072313797, 'recall': 0.946906844796342, 'F-score': 0.9343822783817989, 'MCC': 0.7997019349860769}
+2026-04-08 21:30:37,190 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_92
+2026-04-08 21:30:38,598 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_91
+2026-04-08 21:30:38,598 - speechbrain.utils.epoch_loop - INFO - Going into epoch 93
+2026-04-08 23:47:12,754 - speechbrain.utils.quirks - INFO - Applied quirks (see `speechbrain.utils.quirks`): [disable_jit_profiling, allow_tf32]
+2026-04-08 23:47:12,754 - speechbrain.utils.quirks - INFO - Excluded quirks specified by the `SB_DISABLE_QUIRKS` environment (comma-separated list): []
+2026-04-08 23:47:12,755 - speechbrain.core - INFO - Beginning experiment!
+2026-04-08 23:47:12,755 - speechbrain.core - INFO - Experiment folder: results/VAD_CRDNN_KD/1986
+2026-04-08 23:47:14,730 - speechbrain.utils.superpowers - DEBUG - annotated-doc==0.0.4
+anyio==4.12.1
+asttokens @ file:///home/conda/feedstock_root/build_artifacts/asttokens_1733250440834/work
+certifi==2026.2.25
+cffi==2.0.0
+charset-normalizer==3.4.4
+click==8.1.8
+comm @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_comm_1753453984/work
+contourpy==1.3.0
+cycler==0.12.1
+debugpy @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_debugpy_1754523415/work
+decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1740384970518/work
+exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1746947292760/work
+executing @ file:///home/conda/feedstock_root/build_artifacts/executing_1745502089858/work
+filelock==3.19.1
+fonttools==4.60.2
+fsspec==2025.10.0
+h11==0.16.0
+hf-xet==1.3.2
+httpcore==1.0.9
+httpx==0.28.1
+huggingface_hub==1.5.0
+HyperPyYAML==1.2.3
+idna==3.11
+importlib_metadata @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_importlib-metadata_1747934053/work
+importlib_resources==6.5.2
+ipykernel @ file:///home/conda/feedstock_root/build_artifacts/ipykernel_1754352855579/work
+ipython @ file:///home/conda/feedstock_root/build_artifacts/ipython_1701831663892/work
+jedi @ file:///home/conda/feedstock_root/build_artifacts/jedi_1733300866624/work
+Jinja2==3.1.6
+joblib==1.5.3
+jupyter_client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_1733440914442/work
+jupyter_core @ file:///home/conda/feedstock_root/build_artifacts/jupyter_core_1748333051527/work
+kiwisolver==1.4.7
+markdown-it-py==3.0.0
+MarkupSafe==3.0.2
+matplotlib==3.9.4
+matplotlib-inline @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-inline_1733416936468/work
+mdurl==0.1.2
+mpmath==1.3.0
+nest_asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1733325553580/work
+networkx==3.2.1
+numpy==1.26.4
+packaging @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_packaging_1769093650/work
+pandas==2.3.3
+parso @ file:///home/conda/feedstock_root/build_artifacts/parso_1733271261340/work
+pexpect @ file:///home/conda/feedstock_root/build_artifacts/pexpect_1733301927746/work
+pickleshare @ file:///home/conda/feedstock_root/build_artifacts/pickleshare_1733327343728/work
+pillow==11.3.0
+platformdirs @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_platformdirs_1746710438/work
+prompt_toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1744724089886/work
+psutil @ file:///home/conda/feedstock_root/build_artifacts/psutil_1740663125313/work
+ptyprocess @ file:///home/conda/feedstock_root/build_artifacts/ptyprocess_1733302279685/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl#sha256=92c32ff62b5fd8cf325bec5ab90d7be3d2a8ca8c8a3813ff487a8d2002630d1f
+pure_eval @ file:///home/conda/feedstock_root/build_artifacts/pure_eval_1733569405015/work
+pycparser==2.23
+Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1750615794071/work
+pyparsing==3.3.2
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dateutil_1751104122/work
+pytz==2026.1.post1
+PyYAML==6.0.3
+pyzmq @ file:///home/conda/feedstock_root/build_artifacts/pyzmq_1755799528447/work
+requests==2.32.5
+rich==14.3.3
+ruamel.yaml==0.18.17
+ruamel.yaml.clib==0.2.15
+scipy==1.13.1
+sentencepiece==0.2.1
+shellingham==1.5.4
+six @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_six_1753199211/work
+soundfile==0.13.1
+speechbrain==1.0.3
+stack_data @ file:///home/conda/feedstock_root/build_artifacts/stack_data_1733569443808/work
+sympy==1.14.0
+torch==2.1.0+cu121
+torchaudio==2.1.0+cu121
+torchvision==0.16.0+cu121
+tornado @ file:///home/conda/feedstock_root/build_artifacts/tornado_1754731992698/work
+tqdm==4.67.3
+traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_1733367359838/work
+triton==2.1.0
+typer==0.23.2
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_typing_extensions_1751643513/work
+tzdata==2025.3
+urllib3==2.6.3
+wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1733231326287/work
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1749421620841/work
+
+
+2026-04-08 23:47:23,711 - musan_prepare - INFO - Musan Data Preparation...
+2026-04-08 23:48:05,382 - commonlanguage_prepare - INFO - CommonLanguage Preparation...
+2026-04-08 23:48:49,702 - speechbrain.utils.checkpoints - INFO - Would load a checkpoint here, but none found yet.
+2026-04-08 23:48:49,705 - __main__ - INFO - Teacher loaded from vad-crdnn-libriparty_speechbrain_default and frozen.
+2026-04-08 23:48:50,415 - speechbrain.core - INFO - Gradscaler enabled: `False`
+2026-04-08 23:48:50,415 - speechbrain.core - INFO - Using training precision: `--precision=fp32`
+2026-04-08 23:48:50,416 - speechbrain.core - INFO - Using evaluation precision: `--eval_precision=fp32`
+2026-04-08 23:48:50,417 - speechbrain.core - INFO - KDVADBrain Model Statistics:
+* Total Number of Trainable Parameters: 29.0k
+* Total Number of Parameters: 29.0k
+* Trainable Parameters represent 100.0000% of the total size.
+2026-04-08 23:48:50,444 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/VAD_CRDNN_KD/1986/save/CKPT+epoch_92
+2026-04-08 23:48:50,475 - speechbrain.utils.epoch_loop - INFO - Going into epoch 93
+2026-04-08 23:54:47,843 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.16 to 0.15
+2026-04-08 23:54:47,851 - speechbrain.utils.train_logger - INFO - epoch: 93, lr: 1.64e-01 - train loss: 2.03e-01 - valid loss: 3.29e-01, valid summary: {'TP': 609019.0, 'TN': 271241.0, 'FP': 52680.0, 'FN': 33060.0, 'FAR': 0.16263224675151772, 'FRR': 0.05148899123005033, 'DER': 0.09740304001090476, 'threshold': 0.5, 'precision': 0.9203867619567065, 'recall': 0.9485110087699341, 'F-score': 0.934237270455553, 'MCC': 0.7987068491691718}
+2026-04-08 23:54:47,956 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_93
+2026-04-08 23:54:48,052 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_92
+2026-04-08 23:54:48,079 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_89
+2026-04-08 23:54:48,080 - speechbrain.utils.epoch_loop - INFO - Going into epoch 94
+2026-04-09 00:00:38,547 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.15 to 0.15
+2026-04-09 00:00:38,555 - speechbrain.utils.train_logger - INFO - epoch: 94, lr: 1.55e-01 - train loss: 2.03e-01 - valid loss: 3.32e-01, valid summary: {'TP': 604711.0, 'TN': 276234.0, 'FP': 47687.0, 'FN': 37368.0, 'FAR': 0.14721799451100276, 'FRR': 0.058198445985617686, 'DER': 0.09654972784907007, 'threshold': 0.5, 'precision': 0.9269050487585656, 'recall': 0.9418015540143667, 'F-score': 0.9342939271999425, 'MCC': 0.8011385643462786}
+2026-04-09 00:00:38,650 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_94
+2026-04-09 00:00:38,701 - speechbrain.utils.epoch_loop - INFO - Going into epoch 95
+2026-04-09 00:06:33,414 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.15 to 0.14
+2026-04-09 00:06:33,425 - speechbrain.utils.train_logger - INFO - epoch: 95, lr: 1.45e-01 - train loss: 2.03e-01 - valid loss: 3.35e-01, valid summary: {'TP': 612378.0, 'TN': 266812.0, 'FP': 57109.0, 'FN': 29701.0, 'FAR': 0.17630533370790483, 'FRR': 0.04625754774723911, 'DER': 0.0987386116766558, 'threshold': 0.5, 'precision': 0.914697372764506, 'recall': 0.9537424522527453, 'F-score': 0.9338119469397651, 'MCC': 0.7957673453434433}
+2026-04-09 00:06:33,664 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_95
+2026-04-09 00:06:33,918 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_94
+2026-04-09 00:06:33,918 - speechbrain.utils.epoch_loop - INFO - Going into epoch 96
+2026-04-09 00:12:35,599 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.14 to 0.13
+2026-04-09 00:12:35,604 - speechbrain.utils.train_logger - INFO - epoch: 96, lr: 1.36e-01 - train loss: 2.03e-01 - valid loss: 3.35e-01, valid summary: {'TP': 604599.0, 'TN': 274472.0, 'FP': 49449.0, 'FN': 37480.0, 'FAR': 0.15265759243765756, 'FRR': 0.05837287934973643, 'DER': 0.09888734812091289, 'threshold': 0.5, 'precision': 0.9243954572141353, 'recall': 0.941627120650248, 'F-score': 0.9329317265977793, 'MCC': 0.7965725146141269}
+2026-04-09 00:12:35,700 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_96
+2026-04-09 00:12:35,818 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_95
+2026-04-09 00:12:35,818 - speechbrain.utils.epoch_loop - INFO - Going into epoch 97
+2026-04-09 00:18:35,432 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.13 to 0.12
+2026-04-09 00:18:35,439 - speechbrain.utils.train_logger - INFO - epoch: 97, lr: 1.27e-01 - train loss: 2.03e-01 - valid loss: 3.32e-01, valid summary: {'TP': 602726.0, 'TN': 277871.0, 'FP': 46050.0, 'FN': 39353.0, 'FAR': 0.14216429314554652, 'FRR': 0.06128996587647219, 'DER': 0.09698306944038991, 'threshold': 0.5, 'precision': 0.9290201857035258, 'recall': 0.9387100341235122, 'F-score': 0.9338399742806125, 'MCC': 0.8007447477577355}
+2026-04-09 00:18:35,540 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_97
+2026-04-09 00:18:35,777 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_96
+2026-04-09 00:18:35,778 - speechbrain.utils.epoch_loop - INFO - Going into epoch 98
+2026-04-09 00:24:47,270 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.12 to 0.11
+2026-04-09 00:24:47,275 - speechbrain.utils.train_logger - INFO - epoch: 98, lr: 1.18e-01 - train loss: 2.03e-01 - valid loss: 3.34e-01, valid summary: {'TP': 608595.0, 'TN': 271401.0, 'FP': 52520.0, 'FN': 33484.0, 'FAR': 0.16213829915318356, 'FRR': 0.052149346108499854, 'DER': 0.09773226241937352, 'threshold': 0.5, 'precision': 0.9205584504964958, 'recall': 0.9478506538914846, 'F-score': 0.934005221018513, 'MCC': 0.7981248498145351}
+2026-04-09 00:24:47,347 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_98
+2026-04-09 00:24:47,512 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_97
+2026-04-09 00:24:47,512 - speechbrain.utils.epoch_loop - INFO - Going into epoch 99
+2026-04-09 00:30:50,948 - speechbrain.nnet.schedulers - INFO - Changing lr from 0.11 to 0.1
+2026-04-09 00:30:50,953 - speechbrain.utils.train_logger - INFO - epoch: 99, lr: 1.09e-01 - train loss: 2.03e-01 - valid loss: 3.34e-01, valid summary: {'TP': 601718.0, 'TN': 278107.0, 'FP': 45814.0, 'FN': 40361.0, 'FAR': 0.14143572043800365, 'FRR': 0.06285986615354087, 'DER': 0.09794561418463787, 'threshold': 0.5, 'precision': 0.9292482842546634, 'recall': 0.9371401338464436, 'F-score': 0.9331775240750894, 'MCC': 0.7991016624866852}
+2026-04-09 00:30:51,004 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_99
+2026-04-09 00:30:51,218 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_98
+2026-04-09 00:30:51,218 - speechbrain.utils.epoch_loop - INFO - Going into epoch 100
+2026-04-09 00:36:57,281 - speechbrain.utils.train_logger - INFO - epoch: 100, lr: 1.00e-01 - train loss: 2.03e-01 - valid loss: 3.33e-01, valid summary: {'TP': 608906.0, 'TN': 270964.0, 'FP': 52957.0, 'FN': 33173.0, 'FAR': 0.1634873935311337, 'FRR': 0.05166498203492013, 'DER': 0.09788946094309275, 'threshold': 0.5, 'precision': 0.9199879733419013, 'recall': 0.9483350179650643, 'F-score': 0.9339464485383552, 'MCC': 0.797775055278869}
+2026-04-09 00:36:57,382 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_100
+2026-04-09 00:36:57,730 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results/VAD_CRDNN_KD/1986/save/CKPT+epoch_99
+2026-04-09 00:36:57,746 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/VAD_CRDNN_KD/1986/save/CKPT+epoch_93
+2026-04-09 00:36:57,770 - speechbrain.dataio.dataloader - DEBUG - SaveableDataLoader was requested to load a checkpoint, but the DataLoader has already been iterated. The DataLoader file will be ignored. This is normal in evaluation, when a checkpoint is loaded just to retrieve the best model.
+2026-04-09 00:37:01,321 - speechbrain.utils.train_logger - INFO - Epoch loaded: 93 - test loss: 3.25e-01, test summary: {'TP': 594745.0, 'TN': 265702.0, 'FP': 46185.0, 'FN': 40868.0, 'FAR': 0.1480824785899974, 'FRR': 0.06429698574446929, 'DER': 0.10117183277993762, 'threshold': 0.5, 'precision': 0.9279406487447782, 'recall': 0.9357030142555149, 'F-score': 0.9318056657707574, 'MCC': 0.7911192024653965}

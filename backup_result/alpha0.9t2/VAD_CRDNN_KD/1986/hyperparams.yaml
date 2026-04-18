@@ -1,0 +1,215 @@
+# Generated 2026-04-10 from:
+# /home/xiao.luo/VAD_kd/hparams/train_kd.yaml
+# yamllint disable
+# ##################################################################################################
+# Knowledge Distillation: train a smaller CRDNN student from the trained CRDNN teacher.
+#
+# Teacher:  CNN(16,32) + biGRU(hidden=32,layers=2) + DNN(16,16) -> 1
+# Student:  CNN( 8,16) + biGRU(hidden=16,layers=2) + DNN( 8   ) -> 1
+#
+# Loss: alpha * MSE(sigmoid(student), sigmoid(teacher)) + (1-alpha) * BCE(student, ground_truth)
+# ##################################################################################################
+
+seed: 1986
+__set_seed: !apply:speechbrain.utils.seed_everything [1986]
+output_folder: results/VAD_CRDNN_KD/1986
+save_folder: results/VAD_CRDNN_KD/1986/save
+train_log: results/VAD_CRDNN_KD/1986/train_log.txt
+
+# ── Paths ──────────────────────────────────────────────────────────────────────
+data_folder: /home/xiao.luo/voice_data/LibriParty/dataset
+                                      # /path/to/LibriParty
+musan_folder: /home/xiao.luo/voice_data/musan
+                                      # /path/to/musan
+commonlanguage_folder: /home/xiao.luo/voice_data/common_voice_kpd
+                                      # /path/to/common_voice_kpd
+
+# Teacher checkpoint (frozen)
+teacher_ckpt_dir: vad-crdnn-libriparty_speechbrain_default
+                                 # e.g. /path/to/train_results/VAD_CRDNN/1986/save/CKPT+epoch_85
+
+# Openrir noise (reuse existing csv if already prepared)
+data_folder_noise: /home/xiao.luo/voice_data/LibriParty/dataset/noise
+NOISE_DATASET_URL: 
+  https://www.dropbox.com/scl/fi/a09pj97s5ifan81dqhi4n/noises.zip?rlkey=j8b0n9kdjdr32o1f06t0cw5b7&dl=1
+noise_csv_openrir: results/VAD_CRDNN_KD/1986/save/noise_openrir.csv
+
+# Manifest files (reuse from teacher run or regenerate)
+annotation_train: results/VAD_CRDNN_KD/1986/save/train.json
+annotation_valid: results/VAD_CRDNN_KD/1986/save/valid.json
+annotation_test: results/VAD_CRDNN_KD/1986/save/test.json
+music_csv: results/VAD_CRDNN_KD/1986/save/music.csv
+noise_csv: results/VAD_CRDNN_KD/1986/save/noise.csv
+speech_csv: results/VAD_CRDNN_KD/1986/save/speech.csv
+multilang_speech_csv: results/VAD_CRDNN_KD/1986/save/multilang_speech.csv
+skip_prep: false
+
+# ── Training parameters ────────────────────────────────────────────────────────
+N_epochs: 100
+lr: 1.0
+lr_final: 0.1
+batch_size: 16
+example_length: 5        # seconds
+sample_rate: 16000
+time_resolution: 0.01   # seconds
+
+num_workers: 4
+train_dataloader_opts:
+  batch_size: 16
+  num_workers: 4
+valid_dataloader_opts:
+  batch_size: 16
+  num_workers: 4
+test_dataloader_opts:
+  batch_size: 16
+  num_workers: 4
+
+# ── KD hyperparameters ─────────────────────────────────────────────────────────
+kd_alpha: 0.9         # weight for KD loss  (1-alpha goes to BCE)
+kd_temperature: 2.0   # temperature for softening teacher/student logits
+
+# ── Feature parameters ─────────────────────────────────────────────────────────
+n_fft: 400
+n_mels: 40
+
+# ── Data augmentation ─────────────────────────────────────────────────────────
+prepare_noise_data: !name:speechbrain.augment.preparation.prepare_dataset_from_URL
+  URL: 
+    https://www.dropbox.com/scl/fi/a09pj97s5ifan81dqhi4n/noises.zip?rlkey=j8b0n9kdjdr32o1f06t0cw5b7&dl=1
+  dest_folder: /home/xiao.luo/voice_data/LibriParty/dataset/noise
+  ext: wav
+  csv_file: results/VAD_CRDNN_KD/1986/save/noise_openrir.csv
+
+add_noise: !new:speechbrain.augment.time_domain.AddNoise
+  csv_file: results/VAD_CRDNN_KD/1986/save/noise_openrir.csv
+  snr_low: -5
+  snr_high: 15
+  noise_sample_rate: 16000
+  clean_sample_rate: 16000
+  num_workers: 4
+
+add_noise_musan: !new:speechbrain.augment.time_domain.AddNoise
+  csv_file: results/VAD_CRDNN_KD/1986/save/noise.csv
+  snr_low: -5
+  snr_high: 15
+  noise_sample_rate: 16000
+  clean_sample_rate: 16000
+  num_workers: 4
+
+add_music_musan: !new:speechbrain.augment.time_domain.AddNoise
+  csv_file: results/VAD_CRDNN_KD/1986/save/music.csv
+  snr_low: -5
+  snr_high: 15
+  noise_sample_rate: 16000
+  clean_sample_rate: 16000
+  num_workers: 4
+
+add_speech_musan: !new:speechbrain.augment.time_domain.AddNoise
+  csv_file: results/VAD_CRDNN_KD/1986/save/speech.csv
+  snr_low: -5
+  snr_high: 15
+  noise_sample_rate: 16000
+  clean_sample_rate: 16000
+  num_workers: 4
+
+# ── Feature extractor + normalizer (shared by teacher and student) ─────────────
+compute_features: !new:speechbrain.lobes.features.Fbank
+  sample_rate: 16000
+  n_fft: 400
+  n_mels: 40
+  hop_length: 10.0                               # ms
+
+mean_var_norm: &id008 !new:speechbrain.processing.features.InputNormalization
+
+# ── Optimizer & scheduler (for student only) ───────────────────────────────────
+  norm_type: sentence
+
+# ── Teacher model (same architecture as original, weights loaded in train_kd.py) ─
+teacher_cnn: &id001 !new:speechbrain.nnet.containers.Sequential
+  input_shape: [null, null, 40]
+  norm1: !name:speechbrain.nnet.normalization.LayerNorm
+  cnn1: !name:speechbrain.lobes.models.CRDNN.CNN_Block
+    channels: 16
+    kernel_size: (3, 3)
+  cnn2: !name:speechbrain.lobes.models.CRDNN.CNN_Block
+    channels: 32
+    kernel_size: (3, 3)
+
+teacher_rnn: &id002 !new:speechbrain.nnet.RNN.GRU
+  input_shape: [null, null, 320]
+  hidden_size: 32
+  num_layers: 2
+  bidirectional: true
+
+teacher_dnn: &id003 !new:speechbrain.nnet.containers.Sequential
+  input_shape: [null, null, 64]
+  dnn1: !name:speechbrain.lobes.models.CRDNN.DNN_Block
+    neurons: 16
+  dnn2: !name:speechbrain.lobes.models.CRDNN.DNN_Block
+    neurons: 16
+  lin: !name:speechbrain.nnet.linear.Linear
+    n_neurons: 1
+    bias: false
+
+teacher_model: !new:torch.nn.ModuleList
+- [*id001, *id002, *id003]
+student_cnn: &id004 !new:speechbrain.nnet.containers.Sequential
+  input_shape: [null, null, 40]
+  norm1: !name:speechbrain.nnet.normalization.LayerNorm
+  cnn1: !name:speechbrain.lobes.models.CRDNN.CNN_Block
+    channels: 8
+    kernel_size: (3, 3)
+  cnn2: !name:speechbrain.lobes.models.CRDNN.CNN_Block
+    channels: 16
+    kernel_size: (3, 3)
+
+student_rnn: &id005 !new:speechbrain.nnet.RNN.GRU
+  input_shape: [null, null, 160]
+  hidden_size: 16
+  num_layers: 2
+  bidirectional: true
+
+student_dnn: &id006 !new:speechbrain.nnet.containers.Sequential
+  input_shape: [null, null, 32]
+  dnn1: !name:speechbrain.lobes.models.CRDNN.DNN_Block
+    neurons: 8
+  lin: !name:speechbrain.nnet.linear.Linear
+    n_neurons: 1
+    bias: false
+
+student_model: &id007 !new:torch.nn.ModuleList
+- [*id004, *id005, *id006]
+modules:
+  student_model: *id007
+  student_cnn: *id004
+  student_rnn: *id005
+  student_dnn: *id006
+  mean_var_norm: *id008
+opt_class: !name:torch.optim.Adadelta
+  lr: 1.0
+  rho: 0.95
+  eps: 1.e-8
+
+epoch_counter: &id009 !new:speechbrain.utils.epoch_loop.EpochCounter
+
+# ── Losses & logging ───────────────────────────────────────────────────────────
+  limit: 100
+
+lr_annealing: !new:speechbrain.nnet.schedulers.LinearScheduler
+  initial_value: 1.0
+  final_value: 0.1
+  epoch_count: 100
+
+checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
+  checkpoints_dir: results/VAD_CRDNN_KD/1986/save
+  recoverables:
+    model: *id007
+    normalizer: *id008
+    counter: *id009
+compute_BCE_cost: !name:speechbrain.nnet.losses.bce_loss
+
+train_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
+  save_file: results/VAD_CRDNN_KD/1986/train_log.txt
+
+train_stats: !name:speechbrain.utils.metric_stats.BinaryMetricStats
+test_stats: !name:speechbrain.utils.metric_stats.BinaryMetricStats
